@@ -1,0 +1,609 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N|stack limit increased to max
+@N:Can't find top module!
+@N: CD140 :	| Using the VHDL 1993 Standard for file '/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.vhd'.
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3259:17:3259:29|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3266:17:3266:28|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3309:17:3309:29|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3316:17:3316:28|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3359:17:3359:29|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3366:17:3366:28|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5110:25:5110:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5114:25:5114:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5145:29:5145:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5149:29:5149:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2508:29:2508:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2513:29:2513:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2544:33:2544:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2548:33:2548:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2581:29:2581:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2586:29:2586:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2617:33:2617:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2621:33:2621:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3108:29:3108:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3113:29:3113:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3144:33:3144:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3148:33:3148:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3181:29:3181:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3186:29:3186:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3217:33:3217:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3221:33:3221:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":24:10:24:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":26:10:26:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":173:12:173:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":180:12:180:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":56:12:56:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":60:12:60:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":60:12:60:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":64:12:64:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/include/config_pkg.sv":360:14:360:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/include/config_pkg.sv":372:14:372:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/include/riscv_pkg.sv":968:12:968:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/include/riscv_pkg.sv":1003:12:1003:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv":112:14:112:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv":118:14:118:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv":26:18:26:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv":40:18:40:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv":293:10:293:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv":313:10:313:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv":55:11:55:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv":59:11:59:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv":77:14:77:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv":79:14:79:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv":38:10:38:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv":44:10:44:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":52:14:52:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":56:14:56:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":112:12:112:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":119:12:119:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":171:18:171:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":186:18:186:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":310:14:310:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":345:14:345:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv":84:9:84:21|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv":96:9:96:20|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6.sv":1527:12:1527:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6.sv":1531:12:1531:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6.sv":1537:11:1537:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6.sv":1676:11:1676:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6.sv":1729:11:1729:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6.sv":1734:11:1734:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2713:11:2713:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2720:11:2720:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":931:11:931:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":963:11:963:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/load_unit.sv":548:11:548:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/load_unit.sv":567:11:567:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/scoreboard.sv":511:11:511:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/scoreboard.sv":549:11:549:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/store_buffer.sv":270:11:270:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/store_buffer.sv":289:11:289:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/axi_shim.sv":301:11:301:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/axi_shim.sv":308:11:308:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":171:12:171:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":186:12:186:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":551:12:551:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":564:12:564:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":575:12:575:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":582:12:582:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":284:11:284:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":300:11:300:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":373:11:373:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":438:11:438:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":619:11:619:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":646:11:646:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":644:11:644:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":697:11:697:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache.sv":374:11:374:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache.sv":387:11:387:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":537:11:537:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":596:11:596:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_cache_subsystem.sv":241:11:241:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_cache_subsystem.sv":285:11:285:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":717:11:717:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":721:11:721:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":542:11:542:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":548:11:548:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":832:11:832:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":854:11:854:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cache_ctrl.sv":473:11:473:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cache_ctrl.sv":491:11:491:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/std_cache_subsystem.sv":288:11:288:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/std_cache_subsystem.sv":331:11:331:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/std_nbdcache.sv":296:11:296:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/std_nbdcache.sv":301:11:301:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv":134:15:134:27|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv":140:15:140:26|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv":468:13:468:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv":517:13:517:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv":546:13:546:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv":556:13:556:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv":220:15:220:27|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv":224:15:224:26|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/pmp/src/pmp.sv":78:15:78:27|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/pmp/src/pmp.sv":92:15:92:26|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":58:21:58:33|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":64:21:64:32|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":79:21:79:33|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":107:21:107:32|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":37:13:37:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":58:13:58:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper_cache_techno.sv":41:13:41:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper_cache_techno.sv":62:13:62:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv":209:10:209:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv":247:10:247:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/common/local/util/sram.sv":106:23:106:35|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/common/local/util/sram.sv":114:23:114:34|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":402:11:402:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":439:11:439:22|Read directive translate_on.
+@N|stack limit increased to max
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3259:17:3259:29|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3266:17:3266:28|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3309:17:3309:29|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3316:17:3316:28|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3359:17:3359:29|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v":3366:17:3366:28|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5110:25:5110:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5114:25:5114:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5145:29:5145:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v":5149:29:5149:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2508:29:2508:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2513:29:2513:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2544:33:2544:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2548:33:2548:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2581:29:2581:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2586:29:2586:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2617:33:2617:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":2621:33:2621:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3108:29:3108:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3113:29:3113:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3144:33:3144:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3148:33:3148:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3181:29:3181:41|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3186:29:3186:40|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3217:33:3217:45|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v":3221:33:3221:44|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"/home/anonymous/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":24:10:24:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":26:10:26:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":173:12:173:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":180:12:180:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":56:12:56:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":60:12:60:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":60:12:60:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":64:12:64:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/include/config_pkg.sv":360:14:360:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/include/config_pkg.sv":372:14:372:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/include/riscv_pkg.sv":968:12:968:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/include/riscv_pkg.sv":1003:12:1003:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv":112:14:112:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv":118:14:118:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv":26:18:26:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv":40:18:40:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv":293:10:293:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv":313:10:313:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv":55:11:55:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv":59:11:59:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv":77:14:77:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv":79:14:79:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv":38:10:38:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv":44:10:44:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":52:14:52:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":56:14:56:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":112:12:112:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":119:12:119:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":171:18:171:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":186:18:186:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":310:14:310:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":345:14:345:25|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv":84:9:84:21|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv":96:9:96:20|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6.sv":1527:12:1527:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6.sv":1531:12:1531:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6.sv":1537:11:1537:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6.sv":1676:11:1676:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6.sv":1729:11:1729:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6.sv":1734:11:1734:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2713:11:2713:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2720:11:2720:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":931:11:931:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":963:11:963:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/load_unit.sv":548:11:548:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/load_unit.sv":567:11:567:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/scoreboard.sv":511:11:511:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/scoreboard.sv":549:11:549:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/store_buffer.sv":270:11:270:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/store_buffer.sv":289:11:289:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/axi_shim.sv":301:11:301:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/axi_shim.sv":308:11:308:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":171:12:171:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":186:12:186:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":551:12:551:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":564:12:564:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":575:12:575:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":582:12:582:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":284:11:284:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":300:11:300:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":373:11:373:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":438:11:438:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":619:11:619:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":646:11:646:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":644:11:644:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":697:11:697:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache.sv":374:11:374:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache.sv":387:11:387:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":537:11:537:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":596:11:596:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_cache_subsystem.sv":241:11:241:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_cache_subsystem.sv":285:11:285:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":717:11:717:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":721:11:721:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":542:11:542:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":548:11:548:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":832:11:832:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/miss_handler.sv":854:11:854:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cache_ctrl.sv":473:11:473:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cache_ctrl.sv":491:11:491:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/std_cache_subsystem.sv":288:11:288:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/std_cache_subsystem.sv":331:11:331:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/std_nbdcache.sv":296:11:296:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/std_nbdcache.sv":301:11:301:22|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv":134:15:134:27|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv":140:15:140:26|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv":468:13:468:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv":517:13:517:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv":546:13:546:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv":556:13:556:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv":220:15:220:27|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv":224:15:224:26|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/pmp/src/pmp.sv":78:15:78:27|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/pmp/src/pmp.sv":92:15:92:26|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":58:21:58:33|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":64:21:64:32|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":79:21:79:33|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":107:21:107:32|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":37:13:37:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":58:13:58:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper_cache_techno.sv":41:13:41:25|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper_cache_techno.sv":62:13:62:24|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv":209:10:209:22|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv":247:10:247:21|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/common/local/util/sram.sv":106:23:106:35|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/common/local/util/sram.sv":114:23:114:34|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":402:11:402:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":439:11:439:22|Read directive translate_on.
+@N|stack limit increased to max
+@N: CG364 :"/home/anonymous/code/cva6/core/include/config_pkg.sv":10:8:10:17|Synthesizing module config_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/cv32a6_ima_sv32_fpga_config_pkg.sv":11:8:11:22|Synthesizing module cva6_config_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/riscv_pkg.sv":18:8:18:12|Synthesizing module riscv in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/ariane_pkg.sv":29:8:29:17|Synthesizing module ariane_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv":21:8:21:14|Synthesizing module axi_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/wt_cache_pkg.sv":23:8:23:19|Synthesizing module wt_cache_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/std_cache_pkg.sv":18:8:18:20|Synthesizing module std_cache_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/instr_tracer_pkg.sv":16:8:16:23|Synthesizing module instr_tracer_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/include/build_config_pkg.sv":1:8:1:23|Synthesizing module build_config_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv":12:8:12:22|Synthesizing module cvxif_instr_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv":18:8:18:18|Synthesizing module cf_math_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv":26:8:26:19|Synthesizing module hpdcache_pkg in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv":27:8:27:22|Synthesizing module hwpf_stride_pkg in library work.
+@N: CG334 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":575:12:575:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":582:12:582:23|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/core/instr_realign.sv":22:7:22:19|Synthesizing module instr_realign in library work.
+@N: CG334 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":551:12:551:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":564:12:564:23|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":13:7:13:18|Synthesizing module cva6_fifo_v3 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":21:7:21:16|Synthesizing module AsyncDpRam in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/unread.sv":16:7:16:12|Synthesizing module unread in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":46:7:46:17|Synthesizing module instr_queue__internal_typedef_16_1 in library work.
+@N: CG334 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":171:12:171:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":186:12:186:23|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":13:7:13:18|Synthesizing module cva6_fifo_v3__gen0_2 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":21:7:21:16|Synthesizing module AsyncDpRam in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":18:7:18:14|Synthesizing module frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/frontend/ras.sv":17:7:17:9|Synthesizing module ras__gen1_3 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/frontend/btb.sv":28:7:28:9|Synthesizing module btb__gen2__gen3_4 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":28:7:28:15|Synthesizing module SyncDpRam in library work.
+@N: CG440 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":62:25:62:30|Allowing writes in multiple processes for multi-port RAM
+@N: CL214 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":130:24:130:40|Found multi-write port RAM Mem_DP, number of write ports=2, depth=32, width=33
+@N: CL214 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv":117:24:117:40|Found multi-write port RAM Mem_DP, number of write ports=2, depth=32, width=33
+@N: CG364 :"/home/anonymous/code/cva6/core/frontend/bht.sv":21:7:21:9|Synthesizing module bht__gen4_5 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":21:7:21:23|Synthesizing module AsyncThreePortRam in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/frontend/instr_scan.sv":18:7:18:16|Synthesizing module instr_scan in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/id_stage.sv":16:7:16:14|Synthesizing module id_stage__internal_typedef_10__internal_typedef_11__internal_typedef_16__internal_typedef_19__internal_typedef_17__internal_typedef_46__internal_typedef_37__internal_typedef_38_6 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/decoder.sv":22:7:22:13|Synthesizing module decoder__gen5__gen6__gen7__gen8__gen9_7 in library work.
+@N: CG179 :"/home/anonymous/code/cva6/core/decoder.sv":254:61:254:73|Removing redundant assignment.
+@N: CG334 :"/home/anonymous/code/cva6/core/scoreboard.sv":511:11:511:23|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/core/scoreboard.sv":549:11:549:22|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/core/scoreboard.sv":15:7:15:16|Synthesizing module scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_9 in library work.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":112:12:112:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":119:12:119:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":171:18:171:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":186:18:186:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":310:14:310:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":345:14:345:25|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen10_10 in library work.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":112:12:112:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":119:12:119:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":171:18:171:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":186:18:186:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":310:14:310:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":345:14:345:25|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen11_11 in library work.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":112:12:112:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":119:12:119:23|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":171:18:171:30|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":186:18:186:29|Read directive translate_on.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":310:14:310:26|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":345:14:345:25|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen12_12 in library work.
+@N: CG334 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":112:12:112:24|Read directive translate_off.
+@N: CG333 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":119:12:119:23|Read directive translate_on.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen13_13 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen14_14 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen15_15 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen16_16 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen17_17 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen18_18 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen19_19 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen20_20 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen21_21 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen22_22 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen23_23 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen24_24 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen25_25 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen26_26 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen27_27 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen28_28 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen29_29 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen30_30 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen31_31 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen32_32 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen33_33 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen34_34 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen35_35 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen36_36 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen37_37 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen38_38 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen39_39 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen40_40 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree__gen41_41 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":47:7:47:17|Synthesizing module rr_arb_tree in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cvxif_issue_register_commit_if_driver.sv":10:7:10:43|Synthesizing module cvxif_issue_register_commit_if_driver__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_43 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":17:7:17:25|Synthesizing module issue_read_operands__internal_typedef_10__internal_typedef_21__internal_typedef_17_rs3_len_t__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_42 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/ariane_regfile_fpga.sv":28:7:28:25|Synthesizing module ariane_regfile_fpga in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/issue_stage.sv":17:7:17:17|Synthesizing module issue_stage__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21__internal_typedef_17__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_8 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/alu.sv":21:7:21:9|Synthesizing module alu__internal_typedef_21_45 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/branch_unit.sv":15:7:15:17|Synthesizing module branch_unit__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21_46 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/csr_buffer.sv":17:7:17:16|Synthesizing module csr_buffer__internal_typedef_21_47 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/multiplier.sv":18:7:18:16|Synthesizing module multiplier in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":25:7:25:9|Synthesizing module lzc in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/serdiv.sv":18:7:18:12|Synthesizing module serdiv in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/mult.sv":3:7:3:10|Synthesizing module mult__internal_typedef_21_48 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/store_buffer.sv":17:7:17:18|Synthesizing module store_buffer__internal_typedef_24__internal_typedef_25_51 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/store_unit.sv":16:7:16:16|Synthesizing module store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_50 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":13:7:13:18|Synthesizing module cva6_fifo_v3_amo_op_t_52 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":21:7:21:16|Synthesizing module AsyncDpRam in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/amo_buffer.sv":17:7:17:16|Synthesizing module amo_buffer in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/load_unit.sv":21:7:21:15|Synthesizing module load_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_53 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":25:7:25:9|Synthesizing module lzc in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv":16:7:16:15|Synthesizing module shift_reg__internal_typedef_158_54 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv":16:7:16:15|Synthesizing module shift_reg__internal_typedef_159_55 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/lsu_bypass.sv":26:7:26:16|Synthesizing module lsu_bypass__internal_typedef_20_56 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/load_store_unit.sv":16:7:16:21|Synthesizing module load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_49 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":24:7:24:14|Synthesizing module cva6_tlb__internal_typedef_161__internal_typedef_162_58 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":24:7:24:14|Synthesizing module cva6_tlb__internal_typedef_161__internal_typedef_162_59 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":25:7:25:9|Synthesizing module lzc in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv":22:7:22:10|Synthesizing module lfsr in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":23:7:23:21|Synthesizing module cva6_shared_tlb__internal_typedef_161__internal_typedef_162_60 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/common/local/util/sram.sv":21:7:21:10|Synthesizing module sram in library work.
+@N: CG364 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":10:7:10:21|Synthesizing module tc_sram_wrapper in library work.
+@N: CG364 :"/home/anonymous/code/cva6/common/local/util/sram.sv":21:7:21:10|Synthesizing module sram in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/pmp/src/pmp.sv":15:7:15:9|Synthesizing module pmp in library work.
+@N: CG364 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/lzc.sv":25:7:25:9|Synthesizing module lzc in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":15:7:15:15|Synthesizing module pmp_entry in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":23:7:23:14|Synthesizing module cva6_ptw__internal_typedef_161__internal_typedef_162__gen47__gen48_61 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":25:7:25:14|Synthesizing module cva6_mmu__gen42__gen43__gen44__gen45__gen46__gen47__gen48_57 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/ex_stage.sv":17:7:17:14|Synthesizing module ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_44 in library work.
+@N: CG364 :"/home/anonymous/code/cva6/core/commit_stage.sv":16:7:16:18|Synthesizing module commit_stage__internal_typedef_11__internal_typedef_17_62 in library work.
+@N: CL189 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Register bit dcache_rtrn_type_q[2] is always 0.
+@N: CL201 :"/home/anonymous/code/cva6/core/axi_shim.sv":286:2:286:10|Trying to extract state machine for register wr_state_q.
+@N: CL134 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":42:2:42:10|Found RAM mem, depth=4, width=5
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":25:34:25:43|Input testmode_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":25:34:25:43|Input testmode_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":25:34:25:43|Input testmode_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":25:34:25:43|Input testmode_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":93:30:93:33|Input rr_i is unused.
+@N: CL201 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":256:2:256:10|Trying to extract state machine for register state_q.
+@N: CL201 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":256:2:256:10|Trying to extract state machine for register state_q.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/sram.sv":34:41:34:47|Input wuser_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":25:31:25:35|Input clk_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":26:31:26:36|Input rst_ni is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":28:31:28:35|Input req_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":29:31:29:34|Input we_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":30:31:30:36|Input addr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":31:31:31:37|Input wdata_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":32:31:32:34|Input be_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/sram.sv":34:41:34:47|Input wuser_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":93:30:93:33|Input rr_i is unused.
+@N: CL134 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":611:2:611:10|Found RAM tx_stat_q, depth=4, width=1
+@N: CL134 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":611:2:611:10|Found RAM tx_stat_q, depth=4, width=4
+@N: CL159 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":92:35:92:43|Input rd_data_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":93:47:93:59|Input rd_vld_bits_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":93:30:93:33|Input rr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":93:30:93:33|Input rr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":93:30:93:33|Input rr_i is unused.
+@N: CL134 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":42:2:42:10|Found RAM mem, depth=4, width=2
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":25:34:25:43|Input testmode_i is unused.
+@N: CL201 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":587:2:587:10|Trying to extract state machine for register state_q.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/sram.sv":34:41:34:47|Input wuser_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":25:31:25:35|Input clk_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":26:31:26:36|Input rst_ni is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":28:31:28:35|Input req_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":29:31:29:34|Input we_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":30:31:30:36|Input addr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":31:31:31:37|Input wdata_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":32:31:32:34|Input be_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/sram.sv":34:41:34:47|Input wuser_i is unused.
+@N: CL201 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Trying to extract state machine for register state_q.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_rvfi_probes.sv":53:28:53:32|Input csr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/controller.sv":23:16:23:20|Input clk_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/controller.sv":25:16:25:21|Input rst_ni is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/controller.sv":27:16:27:18|Input v_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/controller.sv":45:16:45:33|Input flush_dcache_ack_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/controller.sv":72:16:72:28|Input hfence_vvma_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/controller.sv":73:16:73:28|Input hfence_gvma_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/csr_regfile.sv":57:16:57:31|Input dirty_fp_state_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/csr_regfile.sv":59:16:59:33|Input csr_write_fflags_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/csr_regfile.sv":61:16:61:30|Input dirty_v_state_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/csr_regfile.sv":77:22:77:36|Input acc_fflags_ex_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/csr_regfile.sv":79:16:79:36|Input acc_fflags_ex_valid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/csr_regfile.sv":107:16:107:34|Input csr_hs_ld_st_inst_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/commit_stage.sv":24:16:24:20|Input clk_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/commit_stage.sv":26:16:26:21|Input rst_ni is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/commit_stage.sv":30:16:30:29|Input flush_dcache_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/commit_stage.sv":36:16:36:28|Input single_step_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":117:43:117:53|Input fpu_valid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":119:22:119:30|Input fpu_fmt_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":121:22:121:29|Input fpu_rm_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":123:22:123:30|Input fpu_frm_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":125:22:125:31|Input fpu_prec_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":135:43:135:54|Input alu2_valid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":137:43:137:51|Input x_valid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":141:23:141:35|Input x_off_instr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":155:16:155:31|Input x_result_valid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":156:21:156:30|Input x_result_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":159:16:159:39|Input x_transaction_rejected_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/ex_stage.sv":161:16:161:26|Input acc_valid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":55:23:55:33|Input lsu_tinst_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":76:16:76:30|Input hs_ld_st_inst_i is unused.
+@N: CL201 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":617:2:617:10|Trying to extract state machine for register state_q.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":44:16:44:35|Input enable_translation_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":45:16:45:37|Input enable_g_translation_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":46:16:46:37|Input en_ld_st_translation_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":47:16:47:39|Input en_ld_st_g_translation_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":65:41:65:46|Input vmid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":77:35:77:45|Input vsatp_ppn_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":78:35:78:45|Input hgatp_ppn_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":80:35:80:40|Input vmxr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/sram.sv":34:41:34:47|Input wuser_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":25:31:25:35|Input clk_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":26:31:26:36|Input rst_ni is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":28:31:28:35|Input req_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":29:31:29:34|Input we_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":30:31:30:36|Input addr_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":31:31:31:37|Input wdata_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/tc_sram_wrapper.sv":32:31:32:34|Input be_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/common/local/util/sram.sv":34:41:34:47|Input wuser_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":37:16:37:26|Input g_st_enbl_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":38:16:38:18|Input v_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":40:16:40:29|Input g_ld_st_enbl_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":41:16:41:24|Input ld_st_v_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":45:41:45:49|Input lu_vmid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":36:16:36:27|Input flush_vvma_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":37:16:37:27|Input flush_gvma_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":39:16:39:26|Input g_st_enbl_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":40:16:40:18|Input v_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":46:41:46:49|Input lu_vmid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":52:41:52:60|Input vmid_to_be_flushed_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":54:36:54:57|Input gpaddr_to_be_flushed_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":36:16:36:27|Input flush_vvma_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":37:16:37:27|Input flush_gvma_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":39:16:39:26|Input g_st_enbl_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":40:16:40:18|Input v_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":46:41:46:49|Input lu_vmid_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":52:41:52:60|Input vmid_to_be_flushed_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":54:36:54:57|Input gpaddr_to_be_flushed_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/core/load_store_unit.sv":142:32:142:53|Input dcache_wbuffer_empty_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv":20:17:20:21|Input clk_i is unused.
+@N: CL159 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv":21:17:21:22|Input rst_ni is unused.
+@N: CL201 :"/home/anonymous/code/cva6/core/load_unit.sv":458:2:458:10|Trying to extract state machine for register state_q.
+@N: CL201 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Trying to extract state machine for register state_q.
+@N: CL134 :"/home/anonymous/code/cva6/core/ariane_regfile_fpga.sv":99:4:99:12|Found RAM regfile_ram_block[0].mem[0], depth=32, width=32
+@N: CL134 :"/home/anonymous/code/cva6/core/ariane_regfile_fpga.sv":99:4:99:12|Found RAM regfile_ram_block[0].mem[0], depth=32, width=32
+@N: CL134 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Found RAM mem_q, depth=4, width=32
+@N: CL134 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":45:2:45:10|Found RAM mem, depth=128, width=3
+@N: CL134 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv":45:2:45:10|Found RAM mem, depth=128, width=3
+@N: CL134 :"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv":42:2:42:10|Found RAM mem, depth=4, width=136
+@N|Running in 64-bit mode
+

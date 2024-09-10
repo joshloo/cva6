@@ -1,0 +1,391 @@
+# Tue Sep 10 12:25:28 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: /home/anonymous/lscc/radiant/2024.1/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: anonymous
+max virtual memory: unlimited (bytes)
+max user processes: 143858
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 101R, Built May 14 2024 08:34:58, @5398574
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 501MB peak: 501MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 544MB peak: 544MB)
+
+Reading constraint file: /home/anonymous/lscc/radiant/2024.1/scripts/tcl/flow/radiant_synplify_vars.tcl
+@L: /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6_1_impl_1_scck.rpt 
+See clock summary report "/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6_1_impl_1_scck.rpt"
+@N: MF472 |Synthesis running in Automatic Compile Point mode
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 621MB peak: 622MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 621MB peak: 622MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 630MB peak: 630MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 632MB peak: 632MB)
+
+@W: BN114 :"/home/anonymous/code/cva6/core/frontend/btb.sv":63:9:63:16|Removing instance i_unread (in view: work.btb__gen3__gen4_5_Z5_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/anonymous/code/cva6/core/frontend/bht.sv":51:9:51:16|Removing instance i_unread (in view: work.bht__gen5_6_128_1s_64_1s_1s_8s_6_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":510:9:510:25|Removing instance i_unread_fifo_pos (in view: work.instr_queue__internal_typedef_16_1_0s_2_layer0(verilog)) because it does not drive other instances.
+@W: BN114 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":509:9:509:28|Removing instance i_unread_branch_mask (in view: work.instr_queue__internal_typedef_16_1_0s_2_layer0(verilog)) because it does not drive other instances.
+NConnInternalConnection caching is on
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 696MB peak: 696MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 696MB peak: 696MB)
+
+
+Start optimization across hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 696MB peak: 696MB)
+
+@W: BN132 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance id_stage_i.issue_q[0].sbe.ex.valid because it is equivalent to instance id_stage_i.issue_q[0].sbe.valid. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_7(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_5(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_7(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_6(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_6(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_4(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_4(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256_none_0s_64_8_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256_none_0s_0_0s_23_5(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[2\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[3\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_256_256_0_none_1s_0_0s_256_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[2\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[3\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_256_256_0_none_1s_0_0s_256_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[2\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[3\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_256_256_0_none_1s_0_0s_256_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[2\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[3\]\.i_tc_sram_wrapper (in view: work.sram_256_256_0_none_0s_256_256_32_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_256_256_0_none_1s_0_0s_256_0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":355:2:355:10|Removing sequential instance cmp_en_q (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[2\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[3\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[1\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[5\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[6\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[7\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[4\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":341:6:341:15|Removing instance gen_tag_srams\[0\]\.i_tag_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":315:6:315:16|Removing instance gen_data_banks\[3\]\.i_data_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":315:6:315:16|Removing instance gen_data_banks\[0\]\.i_data_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":315:6:315:16|Removing instance gen_data_banks\[1\]\.i_data_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":315:6:315:16|Removing instance gen_data_banks\[2\]\.i_data_sram (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":263:4:263:15|Removing instance i_lzc_rd_hit (in view: work.wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":256:2:256:10|Removing sequential instance rd_req_q (in view: work.wt_dcache_ctrl__gen68__gen69_77_8s_1_53_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_ctrl.sv":256:2:256:10|Removing sequential instance rd_req_q (in view: work.wt_dcache_ctrl__gen70__gen71_78_8s_1_54_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":203:4:203:13|Removing instance i_lfsr_inv (in view: work.wt_dcache_missunit__internal_typedef_165__internal_typedef_166_72_8s_1_4s_48_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":193:4:193:12|Removing instance i_lzc_inv (in view: work.wt_dcache_missunit__internal_typedef_165__internal_typedef_166_72_8s_1_4s_48_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":225:10:225:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_lower (in view: work.rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_6(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv":216:10:216:20|Removing instance gen_arbiter\.gen_int_rr\.gen_fair_arb\.i_lzc_upper (in view: work.rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_6(verilog)) because it does not drive other instances.
+@W: MO129 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Sequential instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.inv_q is reduced to a combinational gate by constant propagation.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256s_none_0s_64_64_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256s_none_0s_0_0s_23_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256s_none_0s_64_64_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256s_none_0s_0_0s_23_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256s_none_0s_64_64_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256s_none_0s_0_0s_23_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_128_128_0_256s_none_0s_0_0s_128_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_23_1s_0s_256s_none_0s_64_64_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_23_1s_0s_256s_none_0s_0_0s_23_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_128_128_0_256s_none_0s_0_0s_128_2(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_128_128_0_256s_none_0s_0_0s_128_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[1\]\.i_tc_sram_wrapper (in view: work.sram_128_128_0_256s_none_0s_128_128_16_3(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram_cache.sv":111:8:111:16|Removing instance genblk1\.data_sram (in view: work.sram_cache_128_128_0_256s_none_0s_0_0s_128_0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing sequential instance repl_way_oh_q[3:0] (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":492:6:492:14|Removing instance gen_sram\[3\]\.data_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":492:6:492:14|Removing instance gen_sram\[0\]\.data_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":492:6:492:14|Removing instance gen_sram\[1\]\.data_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":492:6:492:14|Removing instance gen_sram\[2\]\.data_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":466:6:466:13|Removing instance gen_sram\[2\]\.tag_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":466:6:466:13|Removing instance gen_sram\[0\]\.tag_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":466:6:466:13|Removing instance gen_sram\[1\]\.tag_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":466:6:466:13|Removing instance gen_sram\[3\]\.tag_sram (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":435:4:435:12|Removing instance i_lzc_hit (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":412:4:412:9|Removing instance i_lfsr (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":402:4:402:8|Removing instance i_lzc (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance icache_rtrn_tid_q[1:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":130:2:130:10|Removing sequential instance write_pointer_q[1:0] (in view: work.cva6_fifo_v3_0_2_4_2s_4_2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":130:2:130:10|Removing sequential instance read_pointer_q[1:0] (in view: work.cva6_fifo_v3_0_2_4_2s_4_2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q[1:0] (in view: work.cva6_fifo_v3_0_2_4_2s_4_2(verilog)) of type view:PrimLib.ram2(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/load_unit.sv":140:8:140:19|Removing instance ldbuf_free_index_multi_gen\.lzc_windex_i (in view: work.load_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_55_0_1s_26_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":831:2:831:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.misaligned_ex_q.gva is reduced to a combinational gate by constant propagation.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[1\]\.pte\.reserved[9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[0\]\.pte\.reserved[9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[1\]\.pte\.rsw[1:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[0\]\.pte\.rsw[1:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[1\]\.pte\.x (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[1\]\.pte\.v (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[1\]\.pte\.r (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[1\]\.pte\.a (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[0\]\.pte\.x (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[0\]\.pte\.v (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[0\]\.pte\.r (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance content_q\[0\]\.pte\.a (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_32_1s_0s_64_none_0s_64_8_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_24s_1s_0s_64_none_0s_64s_64s_8s_0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_32_1s_0s_64_none_0s_64_8_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/common/local/util/sram.sv":75:8:75:24|Removing instance gen_cut\[0\]\.i_tc_sram_wrapper (in view: work.sram_24s_1s_0s_64_none_0s_64s_64s_8s_1(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":484:10:484:17|Removing instance gen_sram\[0\]\.genblk1\.g_content_sram\[0\]\.pte_sram (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":484:10:484:17|Removing instance gen_sram\[1\]\.genblk1\.g_content_sram\[0\]\.pte_sram (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":464:8:464:15|Removing instance gen_sram\[0\]\.genblk1\.tag_sram (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":464:8:464:15|Removing instance gen_sram\[1\]\.genblk1\.tag_sram (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) because it does not drive other instances.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_itlb.plru_tree_q[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_itlb.tags_q[1].asid[0] is reduced to a combinational gate by constant propagation.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.valid (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[1\]\.vpn\[1\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[1\]\.vpn\[0\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.vpn\[1\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.vpn\[0\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.asid[0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":182:4:182:9|Removing instance i_itlb (in view: work.cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":617:2:617:10|Removing sequential instance tlb_update_asid_q[0] (in view: work.cva6_ptw__internal_typedef_162__internal_typedef_163__gen50__gen51_63_0s_36_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_ptw.sv":617:2:617:10|Removing sequential instance global_mapping_q (in view: work.cva6_ptw__internal_typedef_162__internal_typedef_163__gen50__gen51_63_0s_36_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":342:2:342:10|Removing sequential instance itlb_vpn_q[19:0] (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_dtlb.plru_tree_q[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_dtlb.tags_q[1].asid[0] is reduced to a combinational gate by constant propagation.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.valid (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[1\]\.vpn\[1\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[1\]\.vpn\[0\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.vpn\[1\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.vpn\[0\][9:0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_tlb.sv":387:2:387:10|Removing sequential instance tags_q\[0\]\.asid[0] (in view: work.cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":831:2:831:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.dtlb_hit_q is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":831:2:831:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.dtlb_is_page_q[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":831:2:831:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.dtlb_pte_q.d is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":831:2:831:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.dtlb_pte_q.u is reduced to a combinational gate by constant propagation.
+@W: MO129 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":831:2:831:10|Sequential instance ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.dtlb_pte_q.w is reduced to a combinational gate by constant propagation.
+@N: BN115 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_mmu.sv":210:4:210:9|Removing instance i_dtlb (in view: work.cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":342:2:342:10|Removing sequential instance dtlb_req_q (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_mmu/cva6_shared_tlb.sv":342:2:342:10|Removing sequential instance dtlb_vpn_q[19:0] (in view: work.cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/load_store_unit.sv":444:4:444:19|Removing instance i_pipe_reg_store (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/ex_stage.sv":692:6:692:14|Removing sequential instance genblk3\.genblk2\.vaddr_to_be_flushed[31:0] (in view: work.ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_46_Z38_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/ex_stage.sv":692:6:692:14|Removing sequential instance genblk3\.genblk2\.asid_to_be_flushed[0] (in view: work.ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_46_Z38_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/ex_stage.sv":660:6:660:14|Removing sequential instance genblk3\.genblk1\.current_instruction_is_sfence_vma (in view: work.ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_46_Z38_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance x_transaction_rejected_o (in view: work.issue_read_operands__internal_typedef_10__internal_typedef_21__internal_typedef_17_rs3_len_t__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_44_Z14_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/scoreboard.sv":471:6:471:14|Removing instance genblk4\[0\]\.i_sel_rs3 (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/scoreboard.sv":342:6:342:23|Removing instance gen_sel_clobbers\[0\]\.i_sel_gpr_clobbers (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":200:4:200:42|Removing instance i_cvxif_issue_register_commit_if_driver (in view: work.issue_read_operands__internal_typedef_10__internal_typedef_21__internal_typedef_17_rs3_len_t__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_44_Z14_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing sequential instance speculative_q (in view: work.frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":161:6:161:23|Removing instance gen_multiple_instr_per_fetch_with_C\.i_lzc_branch_index (in view: work.instr_queue__internal_typedef_16_1_0s_2_layer0(verilog)) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN115' are reported. To see all messages use 'report_messages -log /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/synlog/cva6_1_impl_1_premap.srr -id BN115' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN115} -count unlimited' in the Tcl shell.
+@N: BN362 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance issue_q\[0\]\.is_ctrl_flow (in view: work.id_stage__internal_typedef_10__internal_typedef_11__internal_typedef_16__internal_typedef_19__internal_typedef_17__internal_typedef_46__internal_typedef_37__internal_typedef_38_7_Z8_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance dcache_rd_shift_user_q\[1\][31:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance dcache_rd_shift_user_q\[0\][31:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance icache_rd_shift_user_q\[1\][31:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance icache_rd_shift_user_q\[0\][31:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Finished optimization across hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 696MB peak: 696MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 696MB peak: 696MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 696MB peak: 696MB)
+
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[3\]\.ex_gva (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.ex_gva (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.ex_gva (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[2\]\.ex_gva (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[3\]\.ex_gva (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.ex_gva (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.ex_gva (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[2\]\.ex_gva (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[0\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[1\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[2\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[3\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[4\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[5\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[6\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Removing sequential instance mem_q\[7\]\.sbe\.vfp (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+Encoding state machine state_q[2:0] (in view: work.serdiv_32_0s_21_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state_q[6:0] (in view: work.cva6_ptw__internal_typedef_162__internal_typedef_163__gen50__gen51_63_0s_36_layer0(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine state_q[6:0] (in view: work.load_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_55_0_1s_26_layer0(verilog))
+original code -> new code
+   0000 -> 0000001
+   0001 -> 0000010
+   0010 -> 0000100
+   0011 -> 0001000
+   0100 -> 0010000
+   0110 -> 0100000
+   0111 -> 1000000
+Encoding state machine state_q[5:0] (in view: work.cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+Encoding state machine state_q[6:0] (in view: work.wt_dcache_missunit__internal_typedef_165__internal_typedef_166_72_8s_1_4s_48_layer0(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl__gen68__gen69_77_8s_1_53_layer0(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine state_q[7:0] (in view: work.wt_dcache_ctrl__gen70__gen71_78_8s_1_54_layer0(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine wr_state_q[2:0] (in view: work.axi_shim__gen66__gen67_82_2_1s_55_layer0(verilog))
+original code -> new code
+   0000 -> 00
+   0001 -> 01
+   0010 -> 10
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 705MB peak: 705MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 706MB peak: 706MB)
+
+@N: FX1185 |Applying syn_allowed_resources blockrams=2 on compile point scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=1 on compile point load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0 
+@N: FX1185 |Applying syn_allowed_resources blockrams=4 on compile point wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0 
+@N: FX1184 |Applying syn_allowed_resources blockrams=990 on top level netlist cva6 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 706MB peak: 706MB)
+
+
+
+Clock Summary
+******************
+
+          Start          Requested     Requested     Clock        Clock          Clock
+Level     Clock          Frequency     Period        Type         Group          Load 
+--------------------------------------------------------------------------------------
+0 -       cva6|clk_i     200.0 MHz     5.000         inferred     (multiple)     10892
+======================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+               Clock     Source          Clock Pin                                                   Non-clock Pin     Non-clock Pin
+Clock          Load      Pin             Seq Example                                                 Seq Example       Comb Example 
+------------------------------------------------------------------------------------------------------------------------------------
+cva6|clk_i     10892     clk_i(port)     gen_cache_wt\.i_cache_subsystem.i_adapter.amo_gen_r_q.C     -                 -            
+====================================================================================================================================
+
+@W: MT530 :"/home/anonymous/code/cva6/core/instr_realign.sv":347:2:347:10|Found inferred clock cva6|clk_i which controls 10892 sequential elements including i_frontend.i_instr_realign.unaligned_q. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 10807 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=================================================== Non-Gated/Non-Generated Clocks ===================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                                               
+--------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       clk_i               port                   10807      gen_perf_counter\.perf_counters_i.generic_counter_q\[6\][63:0]
+======================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 705MB peak: 706MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 705MB peak: 706MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 705MB peak: 706MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 617MB peak: 706MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Tue Sep 10 12:25:34 2024
+
+###########################################################]

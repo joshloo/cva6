@@ -1,0 +1,596 @@
+# Tue Sep 10 12:25:36 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09LR-1
+Install: /home/anonymous/lscc/radiant/2024.1/synpbase
+OS: Ubuntu 22.04.4 LTS
+Hostname: anonymous
+max virtual memory: unlimited (bytes)
+max user processes: 143858
+max stack size: 8388608 (bytes)
+
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 101R, Built May 14 2024 08:34:58, @5398574
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 501MB peak: 501MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 514MB peak: 516MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 514MB peak: 516MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 514MB peak: 516MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 514MB peak: 516MB)
+
+
+@N: MF104 :"/home/anonymous/code/cva6/core/scoreboard.sv":15:7:15:16|Found compile point of type hard on View view:work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog) 
+@N: MF104 :"/home/anonymous/code/cva6/core/load_store_unit.sv":16:7:16:21|Found compile point of type hard on View view:work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog) 
+@N: MF104 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache.sv":16:7:16:15|Found compile point of type hard on View view:work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog) 
+
+
+@N: MF105 |Performing bottom-up mapping of Top level view:work.cva6(verilog) 
+
+Start loading ILMs (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 615MB peak: 615MB)
+
+
+Start creating ILM for FPGA scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 625MB peak: 625MB)
+
+
+Finished creating ILM for FPGA scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 625MB peak: 625MB)
+
+
+Start creating ILM for FPGA load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 633MB peak: 633MB)
+
+
+Finished creating ILM for FPGA load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 633MB peak: 633MB)
+
+
+Start creating ILM for FPGA wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 633MB peak: 633MB)
+
+
+Finished creating ILM for FPGA wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 633MB peak: 633MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 633MB peak: 633MB)
+
+
+Begin compile point sub-process log
+
+@N: MF106 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Mapping Top level view:work.cva6(verilog) because 
+		 no database from previous run found.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 633MB peak: 633MB)
+
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[3\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[2\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[3\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[2\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[3\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[2\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.ex_gpaddr[33:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[3\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[2\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.ex_tinst[31:0] (in view: work.cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BZ173 :"/home/anonymous/code/cva6/core/decoder.sv":1315:19:1315:22|ROM instruction_o\.op_20[6:0] (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) mapped in logic.
+@N: BZ173 :"/home/anonymous/code/cva6/core/decoder.sv":723:19:723:22|ROM instruction_o\.op_14[6:0] (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) mapped in logic.
+@N: MO106 :"/home/anonymous/code/cva6/core/decoder.sv":723:19:723:22|Found ROM instruction_o\.op_14[6:0] (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) with 18 words by 7 bits.
+@N: BZ173 :"/home/anonymous/code/cva6/core/decoder.sv":188:6:188:9|ROM decoder\.instruction_o\.use_pc_2 (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) mapped in logic.
+@N: MO106 :"/home/anonymous/code/cva6/core/decoder.sv":188:6:188:9|Found ROM decoder\.instruction_o\.use_pc_2 (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) with 21 words by 1 bit.
+@N: BZ173 :"/home/anonymous/code/cva6/core/decoder.sv":1315:19:1315:22|ROM instruction_o\.op_20[6:0] (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) mapped in logic.
+@N: MO106 :"/home/anonymous/code/cva6/core/decoder.sv":1315:19:1315:22|Found ROM instruction_o\.op_20[6:0] (in view: work.decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0(verilog)) with 11 words by 7 bits.
+@N: BZ173 :"/home/anonymous/code/cva6/core/csr_regfile.sv":1000:13:1000:16|ROM csr_update\.perf_we_o_2[1:0] (in view: work.csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_65_Z40_layer0(verilog)) mapped in logic.
+@N: MO106 :"/home/anonymous/code/cva6/core/csr_regfile.sv":1000:13:1000:16|Found ROM csr_update\.perf_we_o_2[1:0] (in view: work.csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_65_Z40_layer0(verilog)) with 236 words by 2 bits.
+@N: BZ173 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":247:21:247:24|ROM p_axi_req\.axi_rd_lock_2[8:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) mapped in logic.
+@N: MO106 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":247:21:247:24|Found ROM p_axi_req\.axi_rd_lock_2[8:0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) with 11 words by 9 bits.
+@N: MF135 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|RAM gen_perf_counter\.perf_counters_i.mhpmevent_q[4:0] is 8 words by 5 bits.
+@N: MF135 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|RAM gen_cache_wt\.i_cache_subsystem.i_adapter.i_b_fifo.gen_asic_queue\.mem_q[4:0] is 4 words by 5 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 638MB peak: 638MB)
+
+@W: BN132 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_tag_q[21] because it is equivalent to instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_tag_q[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO231 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Found counter in view:work.cva6(verilog) instance gen_cache_wt\.i_cache_subsystem.i_cva6_icache.flush_cnt_q[7:0] 
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_8 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net alu_valid_id_ex_sn[0] has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net ex_stage_i.flu_result_o8_sn has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net ex_stage_i.flu_result_o9_sn has multiple drivers .
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing sequential instance gen_cache_wt\.i_cache_subsystem.i_cva6_icache.state_q[5] (in view: work.cva6(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_30 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_31 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_32 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_35 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_38 has multiple drivers .
+@N: MF179 :"/home/anonymous/code/cva6/core/branch_unit.sv":94:57:94:107|Found 32 by 32 bit equality operator ('==') ex_stage_i.branch_unit_i.mispredict_handler\.un1_branch_predict_i_1 (in view: work.cva6(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":700:34:700:67|Found 5 by 5 bit equality operator ('==') issue_stage_i.i_issue_read_operands.gen_check_waw_dependencies_l0_l1\.un1_issue_instr_i (in view: work.cva6(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":700:34:700:67|Found 5 by 5 bit equality operator ('==') issue_stage_i.i_issue_read_operands.gen_check_waw_dependencies_l0_l0\.un1_issue_instr_i (in view: work.cva6(verilog))
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net gen_cache_wt\.i_cache_subsystem.i_cva6_icache.is_inside_cacheable_regions_0_l0\.range_check_5\.un8_passlto31 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un198_instr_0_is_amolto1 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un198_instr_0_is_amolto0 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un200_instr_0_is_amolto7 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un200_instr_0_is_amolto6 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un200_instr_0_is_amolto5 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un200_instr_0_is_amolto4 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un200_instr_0_is_amolto1 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net commit_stage_i.is_amo_1\.un200_instr_0_is_amolto0 has multiple drivers .
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing sequential instance gen_cache_wt\.i_cache_subsystem.i_cva6_icache.cl_tag_q[20] (in view: work.cva6(verilog)) because it does not drive other instances.
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_895 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_896 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_897 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_898 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_899 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_900 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_901 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_902 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_903 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_904 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_905 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_906 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_907 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_908 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_909 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_910 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_911 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_912 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_913 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_914 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_915 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_916 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_917 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_918 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_919 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_920 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_921 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_922 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_923 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_924 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_925 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_926 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_927 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_928 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_929 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_930 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_931 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_932 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_933 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_934 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_935 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_936 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_937 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_938 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_939 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_940 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_941 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_942 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_943 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_944 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_945 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_946 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_947 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_948 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_949 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_950 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_951 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_952 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_953 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_954 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_955 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_956 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_957 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_958 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_959 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_960 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_961 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_962 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_963 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_964 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_965 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_966 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_967 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_968 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_969 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_970 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_971 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_972 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_973 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_974 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_975 has multiple drivers .
+@W: BN161 :"/home/anonymous/code/cva6/core/cva6.sv":18:7:18:10|Net N_976 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/cva6.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+@N: MF179 :"/home/anonymous/code/cva6/core/frontend/instr_scan.sv":83:40:83:71|Found 5 by 5 bit equality operator ('==') gen_instr_scan\[0\]\.i_instr_scan.un13_rvi_return_o (in view: work.frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[7\]\.un106_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":392:34:392:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[3\]\.un45_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[1\]\.un64_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[2\]\.un71_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[3\]\.un78_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[4\]\.un85_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[5\]\.un92_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":404:52:404:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[6\]\.un99_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[5\]\.un92_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[6\]\.un99_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[7\]\.un106_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":392:34:392:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[0\]\.un3_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":392:34:392:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[1\]\.un17_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":392:34:392:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[2\]\.un31_rs2_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":389:34:389:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[3\]\.un45_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[1\]\.un64_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[2\]\.un71_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[3\]\.un78_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":401:52:401:79|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_entries\[4\]\.un85_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":389:34:389:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[2\]\.un31_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":389:34:389:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[1\]\.un17_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/scoreboard.sv":389:34:389:73|Found 5 by 5 bit equality operator ('==') genblk4\[0\]\.gen_rs_wb\[0\]\.un3_rs1_fwd_req (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog))
+@N: MO231 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Found counter in view:work.serdiv_32_0s_21_layer0(verilog) instance cnt_q[4:0] 
+@N: MF179 :"/home/anonymous/code/cva6/core/serdiv.sv":154:25:154:41|Found 32 by 32 bit equality operator ('==') un2_ab_comp (in view: work.serdiv_32_0s_21_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[1\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[0\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[2\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[4\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[3\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[5\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[7\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 32 by 32 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_if.gen_pmp\.genblk1\[6\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[7\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[6\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[5\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[4\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[3\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[2\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[1\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/pmp/src/pmp_entry.sv":77:19:77:42|Found 34 by 34 bit equality operator ('==') gen_mmu\.i_cva6_mmu.i_pmp_data.gen_pmp\.genblk1\[0\]\.i_pmp_entry.un8_match_o (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":224:11:224:70|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l3\.un1_page_offset_i_1 (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":224:11:224:70|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l2\.un1_page_offset_i_1 (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":224:11:224:70|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l1\.un1_page_offset_i_1 (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":216:11:216:65|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l0\.un1_page_offset_i (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":216:11:216:65|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l3\.un1_page_offset_i (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":216:11:216:65|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l2\.un1_page_offset_i (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":216:11:216:65|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l1\.un1_page_offset_i (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":224:11:224:70|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker_l0\.un1_page_offset_i_1 (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/store_buffer.sv":230:9:230:45|Found 9 by 9 bit equality operator ('==') i_store_unit.store_buffer_i.address_checker\.un1_page_offset_i (in view: work.load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0(verilog))
+@W:"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|ram mhpmevent_q[4:0] has non-zero low address -- force it to zero for safety. 
+@W:"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|ram mhpmevent_q[4:0] has non-zero low address -- force it to zero for safety. 
+@W:"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|ram mhpmevent_q[4:0] has non-zero low address -- force it to zero for safety. 
+@N: FO126 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Generating RAM mhpmevent_q[4:0]
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[2\]\.un16_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[1\]\.un10_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[0\]\.un4_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[6\]\.un40_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[5\]\.un34_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[4\]\.un28_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[3\]\.un22_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv":428:43:428:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_wbuffer.gen_flags\[7\]\.un46_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[2\]\.un28_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[1\]\.un18_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[0\]\.un8_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[7\]\.un78_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[6\]\.un68_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[5\]\.un58_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[4\]\.un48_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_mem.sv":250:63:250:169|Found 32 by 32 bit equality operator ('==') i_wt_dcache_mem.gen_wbuffer_hit\[3\]\.un38_wbuffer_hit_oh (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":227:39:227:158|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.gen_rdrd_collision\[0\]\.un3_mshr_rdrd_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":227:39:227:158|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.gen_rdrd_collision\[1\]\.un9_mshr_rdrd_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":227:39:227:158|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.gen_rdrd_collision\[3\]\.un21_mshr_rdrd_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":239:28:239:160|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.p_tx_coll_l2\.un46_tx_rdwr_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":239:28:239:160|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.p_tx_coll_l1\.un30_tx_rdwr_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":239:28:239:160|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.p_tx_coll_l0\.un14_tx_rdwr_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF179 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_dcache_missunit.sv":239:28:239:160|Found 30 by 30 bit equality operator ('==') i_wt_dcache_missunit.p_tx_coll_l3\.un62_tx_rdwr_collision (in view: work.wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0(verilog))
+@N: MF135 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|RAM gen_cache_wt\.i_cache_subsystem.i_adapter.i_wr_dcache_id.gen_asic_queue\.mem_q[1:0] is 4 words by 2 bits.
+@N: MF135 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|RAM gen_cache_wt\.i_cache_subsystem.i_adapter.i_rd_dcache_id.gen_asic_queue\.mem_q[1:0] is 4 words by 2 bits.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance dcache_rtrn_inv_q\.idx[3] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance dcache_rtrn_inv_q\.idx[2] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance dcache_rtrn_inv_q\.idx[1] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cache_subsystem/wt_axi_adapter.sv":633:2:633:10|Removing sequential instance dcache_rtrn_inv_q\.idx[0] (in view: work.wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.tid[1] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.tid[0] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.way[1] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.way[0] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.tid[1] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.tid[0] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.way[1] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.way[0] (in view: work.cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.nc (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.nc (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.way[2] (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.way[1] (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[0\]\.way[0] (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.way[2] (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.way[1] (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Removing sequential instance gen_asic_queue\.mem_q\[1\]\.way[0] (in view: work.cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s(verilog)) because it does not drive other instances.
+@N: FO126 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Generating RAM gen_asic_queue\.mem_q[4:0]
+@N: MF794 |RAM mhpmevent_q[4:0] required 11 registers during mapping 
+@N: MF794 |RAM gen_asic_queue\.mem_q[4:0] required 4 registers during mapping 
+
+Starting factoring (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 694MB peak: 694MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 761MB peak: 761MB)
+
+NConnInternalConnection caching is on
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing instance i_frontend.npc_rst_load_q because it is equivalent to instance csr_regfile_i.mtvec_rst_load_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Removing sequential instance ex_stage_i.i_mult.i_div.res_q_0[31:0] because it is equivalent to instance ex_stage_i.i_mult.i_div.res_q[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.mtvec_rst_load_q_0 because it is equivalent to instance csr_regfile_i.mtvec_rst_load_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing sequential instance i_frontend.icache_vaddr_q_4[31:2] because it is equivalent to instance i_frontend.icache_vaddr_q_3[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing sequential instance i_frontend.icache_vaddr_q_3[31:2] because it is equivalent to instance i_frontend.icache_vaddr_q_2[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing sequential instance i_frontend.icache_vaddr_q_2[31:2] because it is equivalent to instance i_frontend.icache_vaddr_q_1[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing sequential instance i_frontend.icache_vaddr_q_1[31:2] because it is equivalent to instance i_frontend.icache_vaddr_q_0[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/frontend.sv":417:2:417:10|Removing sequential instance i_frontend.icache_vaddr_q_0[31:2] because it is equivalent to instance i_frontend.icache_vaddr_q[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0_1[11:4] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0_0[11:4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0_0[11:4] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0[11:4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Removing sequential instance ex_stage_i.i_mult.i_div.op_a_q_0[31:0] because it is equivalent to instance ex_stage_i.i_mult.i_div.op_a_q[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Removing sequential instance ex_stage_i.i_mult.i_div.rem_sel_q_0 because it is equivalent to instance ex_stage_i.i_mult.i_div.rem_sel_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Removing sequential instance ex_stage_i.i_mult.i_div.op_b_neg_one_q_0 because it is equivalent to instance ex_stage_i.i_mult.i_div.op_b_neg_one_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Removing sequential instance ex_stage_i.i_mult.i_div.op_b_zero_q_0 because it is equivalent to instance ex_stage_i.i_mult.i_div.op_b_zero_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod_2[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod_1[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_3_mod[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod_1[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod_1[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod_0[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_1_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_1_mod[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_mod[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_2_mod[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.fu_data_q[0].operand_b_0_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.is_compressed_instr_o_0 because it is equivalent to instance issue_stage_i.i_issue_read_operands.is_compressed_instr_o. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/instr_realign.sv":347:2:347:10|Removing sequential instance i_frontend.i_instr_realign.unaligned_address_q_1[31:2] because it is equivalent to instance i_frontend.i_instr_realign.unaligned_address_q_0[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/instr_realign.sv":347:2:347:10|Removing sequential instance i_frontend.i_instr_realign.unaligned_address_q_0[31:2] because it is equivalent to instance i_frontend.i_instr_realign.unaligned_address_q[31:2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0[11:4] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address[11:4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Removing sequential instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_5[31:0] because it is equivalent to instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_4[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Removing sequential instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_4[31:0] because it is equivalent to instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_3[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Removing sequential instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_3[31:0] because it is equivalent to instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_2[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Removing sequential instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_2[31:0] because it is equivalent to instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_1[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Removing sequential instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_1[31:0] because it is equivalent to instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Removing sequential instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q_0[31:0] because it is equivalent to instance i_frontend.i_instr_queue.gen_pc_q_with_c.pc_q[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_mod[31:0] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod_0[31:0] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_2_mod[31:0] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod_2[31:0] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod_1[31:0] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_1_mod[31:0] because it is equivalent to instance ex_stage_i.csr_buffer_i.csr_reg_q.csr_address_0_0_mod[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[6].locked_0 because it is equivalent to instance csr_regfile_i.pmpcfg_q[6].locked. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[3].locked_0 because it is equivalent to instance csr_regfile_i.pmpcfg_q[3].locked. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[7].locked_0 because it is equivalent to instance csr_regfile_i.pmpcfg_q[7].locked. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance id_stage_i.issue_q[0].sbe.result_0[31:0] because it is equivalent to instance id_stage_i.issue_q[0].sbe.result[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing sequential instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q_0[2] because it is equivalent to instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_q[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[2].locked_0 because it is equivalent to instance csr_regfile_i.pmpcfg_q[2].locked. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance id_stage_i.issue_q[0].sbe.pc_3[31:0] because it is equivalent to instance id_stage_i.issue_q[0].sbe.pc_2[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance id_stage_i.issue_q[0].sbe.pc_2[31:0] because it is equivalent to instance id_stage_i.issue_q[0].sbe.pc_1[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance id_stage_i.issue_q[0].sbe.pc_1[31:0] because it is equivalent to instance id_stage_i.issue_q[0].sbe.pc_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Removing sequential instance id_stage_i.issue_q[0].sbe.pc_0[31:0] because it is equivalent to instance id_stage_i.issue_q[0].sbe.pc[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[7].addr_mode_1[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[7].addr_mode_0[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[7].addr_mode_0[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[7].addr_mode[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[6].addr_mode_1[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[6].addr_mode_0[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[6].addr_mode_0[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[6].addr_mode[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[3].addr_mode_1[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[3].addr_mode_0[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[3].addr_mode_0[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[3].addr_mode[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[2].addr_mode_1[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[2].addr_mode_0[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.pmpcfg_q[2].addr_mode_0[1:0] because it is equivalent to instance csr_regfile_i.pmpcfg_q[2].addr_mode[1:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing sequential instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.vaddr_q_1[31:0] because it is equivalent to instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.vaddr_q_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/cache_subsystem/cva6_icache.sv":507:2:507:10|Removing sequential instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.vaddr_q_0[31:0] because it is equivalent to instance gen_cache_wt.i_cache_subsystem.i_cva6_icache.vaddr_q[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/multiplier.sv":154:2:154:10|Removing sequential instance ex_stage_i.i_mult.i_multiplier.mult_valid_q_1 because it is equivalent to instance ex_stage_i.i_mult.i_multiplier.mult_valid_q_0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/multiplier.sv":154:2:154:10|Removing sequential instance ex_stage_i.i_mult.i_multiplier.mult_valid_q_0 because it is equivalent to instance ex_stage_i.i_mult.i_multiplier.mult_valid_q. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.pc_o_2[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.pc_o_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.pc_o_1[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.pc_o_0[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Removing sequential instance issue_stage_i.i_issue_read_operands.pc_o_0[31:0] because it is equivalent to instance issue_stage_i.i_issue_read_operands.pc_o[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[31] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[30] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[29] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[28] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[27] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[26] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[25] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[24] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[23] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[22] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[21] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[20] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[19] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[18] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[17] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[16] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[15] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[14] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[13] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[12] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[11] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[10] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[9] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[8] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[7] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[6] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[5] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Removing sequential instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address_0_0_mod[4] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[31] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[30] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[29] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[28] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[27] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[26] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[25] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[24] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[23] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[22] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[21] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[20] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[19] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[18] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[17] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[16] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[15] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[14] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[13] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[12] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[11] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[10] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[9] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[8] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[7] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[6] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[5] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[4] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[3] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[2] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.dcache_q_mod[1] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.icache_q_mod[31] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.icache_q_mod[30] (in view: work.cva6(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Removing sequential instance csr_regfile_i.icache_q_mod[29] (in view: work.cva6(verilog)) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/cva6.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:55s; Memory used current: 1364MB peak: 1374MB)
+
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[36] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][36]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[37] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][37]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[38] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][38]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[39] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][39]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[40] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][40]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[41] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][41]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[43] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][43]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[44] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][44]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[45] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][45]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[46] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][46]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[47] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][47]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[48] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][48]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[49] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][49]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[50] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][50]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[51] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][51]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[52] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][52]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[53] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][53]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[54] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][54]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[55] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][55]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[56] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][56]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[57] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][57]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[58] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][58]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[59] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][59]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[60] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][60]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[61] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][61]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[62] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][62]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[63] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][63]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[32] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][32]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[33] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[34] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][34]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[35] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][35]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[1]_mod[42] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[1][42]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[5]_mod[35] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[5][35]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[5]_mod[32] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[5][32]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[5]_mod[33] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[5][33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[5]_mod[34] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[5][34]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :|Removing instance gen_perf_counter.perf_counters_i.generic_counter_q[5]_mod[36] because it is equivalent to instance gen_perf_counter.perf_counters_i.generic_counter_q[5][36]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Only the first 100 messages of id 'BN132' are reported. To see all messages use 'report_messages -log /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/cva6.srr -id BN132' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN132} -count unlimited' in the Tcl shell.
+@N: FA113 :"/home/anonymous/code/cva6/core/csr_regfile.sv":891:4:891:5|Pipelining module csr_update\.instret_d_4[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/csr_regfile.sv":2520:2:2520:10|Pushed in register instret_q[63:0].
+@N: FA113 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":434:6:435:4|Pipelining module un1_gen_pc_q_with_c\.pc_q[30:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/frontend/instr_queue.sv":513:4:513:12|Pushed in register pc_q.
+@N: MF169 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Pushed in register issue_q\\\[0\\\]\\\[sbe\\\]\\\[pc\\\].
+@N: MF169 :"/home/anonymous/code/cva6/core/id_stage.sv":341:2:341:10|Pushed in register issue_q\\\[0\\\]sbe\\\[bp\\\]\\\[predict_address\\\].
+@N: MF169 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Pushed in register mem_q\\\[0\\\].
+@N: MF169 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":162:4:162:12|Pushed in register mem_q\\\[1\\\].
+@N: MF169 :"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv":130:2:130:10|Pushed in register read_pointer_q[0].
+@N: MF169 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Pushed in register pc_o[31:0].
+@N: FA113 :"/home/anonymous/code/cva6/core/perf_counters.sv":150:6:150:7|Pipelining module generic_counter\.generic_counter_d\[5\]_5[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Pushed in register generic_counter_q\\\[5\\\].
+@N: FA113 :"/home/anonymous/code/cva6/core/perf_counters.sv":150:6:150:7|Pipelining module generic_counter\.generic_counter_d\[1\]_5[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Pushed in register generic_counter_q\\\[1\\\].
+@N: FA113 :"/home/anonymous/code/cva6/core/perf_counters.sv":150:6:150:7|Pipelining module generic_counter\.generic_counter_d\[6\]_5[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Pushed in register generic_counter_q\\\[6\\\].
+@N: FA113 :"/home/anonymous/code/cva6/core/serdiv.sv":158:20:158:76|Pipelining module add_out[31:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/serdiv.sv":249:2:249:10|Pushed in register op_a_q[31:0].
+@N: FA113 :"/home/anonymous/code/cva6/core/perf_counters.sv":150:6:150:7|Pipelining module generic_counter\.generic_counter_d\[4\]_5[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Pushed in register generic_counter_q\\\[4\\\].
+@N: FA113 :"/home/anonymous/code/cva6/core/perf_counters.sv":150:6:150:7|Pipelining module generic_counter\.generic_counter_d\[3\]_5[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Pushed in register generic_counter_q\\\[3\\\].
+@N: FA113 :"/home/anonymous/code/cva6/core/perf_counters.sv":150:6:150:7|Pipelining module generic_counter\.generic_counter_d\[2\]_5[63:0]. For more information, search for "pipelining" in Online Help.
+@N: MF169 :"/home/anonymous/code/cva6/core/perf_counters.sv":207:2:207:10|Pushed in register generic_counter_q\\\[2\\\].
+
+Starting Early Timing Optimization (Real Time elapsed 0h:01m:16s; CPU Time elapsed 0h:01m:16s; Memory used current: 1376MB peak: 1379MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:03m:42s; CPU Time elapsed 0h:03m:42s; Memory used current: 1432MB peak: 1432MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:03m:43s; CPU Time elapsed 0h:03m:43s; Memory used current: 1434MB peak: 1434MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:03m:50s; CPU Time elapsed 0h:03m:50s; Memory used current: 1434MB peak: 1434MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:04m:43s; CPU Time elapsed 0h:04m:43s; Memory used current: 1496MB peak: 1496MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:04m:44s		   -17.75ns		24391 /     10333
+   2		0h:04m:45s		   -17.75ns		24029 /     10333
+   3		0h:04m:46s		   -17.07ns		24027 /     10333
+   4		0h:04m:47s		   -16.92ns		24030 /     10333
+   5		0h:04m:48s		   -16.92ns		24030 /     10333
+   6		0h:04m:48s		   -16.92ns		24030 /     10333
+
+   7		0h:04m:53s		   -16.92ns		24034 /     10333
+   8		0h:04m:53s		   -15.91ns		24062 /     10333
+   9		0h:04m:55s		   -15.67ns		24081 /     10333
+  10		0h:04m:56s		   -15.76ns		24084 /     10333
+  11		0h:04m:56s		   -15.37ns		24105 /     10333
+  12		0h:04m:57s		   -15.31ns		24105 /     10333
+  13		0h:05m:00s		   -15.31ns		24113 /     10333
+@N: FX271 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":578:2:578:10|Replicating instance issue_stage_i.i_issue_read_operands.alu_valid_q[0] (in view: work.cva6(verilog)) with 102 loads 3 times to improve timing.
+@N: FX271 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":578:2:578:10|Replicating instance issue_stage_i.i_issue_read_operands.csr_valid_q[0] (in view: work.cva6(verilog)) with 85 loads 3 times to improve timing.
+@N: FX271 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Replicating instance commit_pointer_q\[0\][2] (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) with 696 loads 3 times to improve timing.
+@N: FX271 :"/home/anonymous/code/cva6/core/scoreboard.sv":494:2:494:10|Replicating instance commit_pointer_q\[0\][1] (in view: work.scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0(verilog)) with 350 loads 3 times to improve timing.
+@N: FX271 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":578:2:578:10|Replicating instance issue_stage_i.i_issue_read_operands.branch_valid_q[0] (in view: work.cva6(verilog)) with 129 loads 3 times to improve timing.
+@N: FX271 :"/home/anonymous/code/cva6/core/issue_read_operands.sv":897:2:897:10|Replicating instance issue_stage_i.i_issue_read_operands.fu_data_q\[0\]\.operation[6] (in view: work.cva6(verilog)) with 65 loads 2 times to improve timing.
+@N: FX271 :"/home/anonymous/code/cva6/core/csr_buffer.sv":75:2:75:10|Replicating instance ex_stage_i.csr_buffer_i.csr_reg_q\.csr_address[9] (in view: work.cva6(verilog)) with 217 loads 3 times to improve timing.
+Added 20 Registers via timing driven replication
+Added 9 LUTs via timing driven replication
+
+  14		0h:05m:01s		   -15.31ns		24113 /     10353
+  15		0h:05m:02s		   -15.02ns		24122 /     10353
+  16		0h:05m:04s		   -14.98ns		24128 /     10353
+  17		0h:05m:04s		   -14.95ns		24134 /     10353
+  18		0h:05m:05s		   -14.90ns		24139 /     10353
+  19		0h:05m:06s		   -14.90ns		24142 /     10353
+  20		0h:05m:06s		   -14.85ns		24152 /     10353
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:05m:09s; CPU Time elapsed 0h:05m:09s; Memory used current: 1496MB peak: 1496MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:05m:13s; CPU Time elapsed 0h:05m:13s; Memory used current: 1496MB peak: 1496MB)
+
+
+End compile point sub-process log
+
+Writing compile point status file /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/cpprop
+
+Summary of Compile Points :
+*************************** 
+Name     Status     Reason     
+-------------------------------
+cva6     Mapped     No database
+===============================
+
+Process took 0h:05m:14s realtime, 0h:05m:13s cputime
+# Tue Sep 10 12:30:51 2024
+
+###########################################################]

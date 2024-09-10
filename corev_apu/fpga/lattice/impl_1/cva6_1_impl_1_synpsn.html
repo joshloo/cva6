@@ -1,0 +1,169 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link href="file:////home/anonymous/lscc/radiant/2024.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:////home/anonymous/lscc/radiant/2024.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2024.1.0.34.2
+Command Line: postsyn -a LAV-AT -p LAV-AT-E70ES1 -t LFG676 -sp 1 -oc Commercial -top -w -o cva6_1_impl_1_syn.udb -ldc /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6_1_impl_1.ldc -gui -msgset /home/anonymous/code/cva6/corev_apu/fpga/lattice/promote.xml cva6_1_impl_1.vm 
+   Architecture:     LAV-AT
+   Device:           LAV-AT-E70ES1
+   Package:          LFG676
+   Performance:      1
+Reading input file 'cva6_1_impl_1.vm' ...
+WARNING <35811116> - Attribute 'interrupts_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'dcache_req_o_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'dcache_req_i_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'icache_rtrn_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'icache_req_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'fu_data_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'lsu_ctrl_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'irq_ctrl_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'bp_resolve_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'scoreboard_entry_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'fetch_entry_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'icache_drsp_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'icache_dreq_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'icache_arsp_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'icache_areq_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'exception_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'branchpredict_sbe_t' on Module 'cva6' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'ras_t' on Module 'frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'btb_update_t' on Module 'frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'btb_prediction_t' on Module 'frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'bht_update_t' on Module 'frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'tlb_update_cva6_t' on Module 'cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'pte_cva6_t' on Module 'cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'dcache_rtrn_t' on Module 'wt_cache_subsystem__gen58__gen59__gen60__gen61__gen62__gen63__gen64__gen65__gen66__gen67_69_Z57_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'dcache_req_t' on Module 'wt_cache_subsystem__gen58__gen59__gen60__gen61__gen62__gen63__gen64__gen65__gen66__gen67_69_Z57_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'dcache_inval_t' on Module 'wt_cache_subsystem__gen58__gen59__gen60__gen61__gen62__gen63__gen64__gen65__gen66__gen67_69_Z57_layer0' cannot be supported. It will be ignored.
+WARNING <35811116> - Attribute 'wbuffer_t' on Module 'wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0' cannot be supported. It will be ignored.
+Reading constraint file '/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6_1_impl_1.ldc' ...
+Removing unused logic ...
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37839 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37840 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37841 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37842 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37846 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37847 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37848 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37849 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37850 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i_frontend/i_instr_queue/N_37851 undriven or does not drive anything - clipped
+INFO <35811149> - ... More signals are undriven or does not drive anything - clipped
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.data_size_3_i_0_a2_0_RNIFSA4F[0] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.data_size_3_i_0_RNIQ56SC[1] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.address_index_1_3_i_0_a2_0_RNILIORI[0] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.address_index_1_3_i_0_a2_0_RNIOLORI[1] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.data_size_3_i_0[1] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.address_index_1_3_i_0_0[1] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.address_index_1_3_i_0_0[0] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.data_size_3_i_0_0[0] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.data_size_3_i_a2_0[1] is optimized away.
+INFO <35811145> - Instance ex_stage_i/lsu_i/i_store_unit/store_buffer_i/req_port_o.address_index_1_3_i_0_a2_0[1] is optimized away.
+INFO <35811148> - ... More instances are optimized away.
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+ 
+Writing output file 'cva6_1_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 14 secs 
+Total REAL Time: 15 secs 
+Peak Memory Usage: 1015 MB
+Checksum -- postsyn: dabe41435546d8f8e8376fc92bd8832d99c6caba
+
+
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

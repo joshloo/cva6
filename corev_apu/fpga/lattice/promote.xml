@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="/home/anonymous/code/cva6/corev_apu/fpga/lattice/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2  Patch Version(s) " date="Sel Sep 10 12:32:09  +08 2024" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="2012925" type="Error" internal="true" />
+  <msg mid="2012653" type="Warning" internal="true" />
+  <msg mid="2012315" type="Warning" internal="true" />
+</userSetting>

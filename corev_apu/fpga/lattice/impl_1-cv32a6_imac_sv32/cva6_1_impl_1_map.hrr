@@ -1,0 +1,1525 @@
+---------------------------------------------------
+Report for cell cva6
+   Instance path: cva6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	       0.50        100.0
+                                  LUT4	      28844        100.0
+                               LUTGATE	      25258        100.0
+                                LUTRAM	        126        100.0
+                                LUTCCU	       3460        100.0
+                                 IOREG	          4        100.0
+                                 IOBUF	       1414        100.0
+                                PFUREG	       9447        100.0
+                                MULT18	          4        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+commit_stage__internal_typedef_11__internal_typedef_17_64__internal_typedef_17_39_layer0	          1         0.5
+controller__internal_typedef_18_66__internal_typedef_18_41_layer0	          1         0.0
+csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_65_Z40_layer0	          1         8.2
+ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_46_Z38_layer0	          1        28.7
+frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0	          1        10.7
+id_stage__internal_typedef_10__internal_typedef_11__internal_typedef_16__internal_typedef_19__internal_typedef_17__internal_typedef_46__internal_typedef_37__internal_typedef_38_7_Z8_layer0	          1         2.3
+issue_stage__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21__internal_typedef_17__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_10_Z16_layer0	          1        29.5
+perf_counters__gen52__gen53__gen54__gen55__gen56__gen57_68_4s_43_layer0	          1         5.1
+wt_cache_subsystem__gen58__gen59__gen60__gen61__gen62__gen63__gen64__gen65__gen66__gen67_69_Z57_layer0	          1        14.9
+---------------------------------------------------
+Report for cell frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0
+   Instance path: cva6/i_frontend
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       3078        10.7
+                               LUTGATE	       2922        11.6
+                                LUTCCU	        156         4.5
+                                PFUREG	       2424        25.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+bht__gen5_6_128_1s_64_1s_1s_8s_6_layer0	          1         2.5
+           btb__gen3__gen4_5_Z5_layer0	          1         2.5
+instr_queue__internal_typedef_16_1_0s_2_layer0	          1         2.2
+                instr_realign_1_layer0	          1         0.5
+                 instr_scan_7_layer0_0	          1         0.1
+                 instr_scan_7_layer0_1	          1         2.1
+                ras__gen2_4_2_4_layer0	          1         0.2
+---------------------------------------------------
+Report for cell instr_realign_1_layer0
+   Instance path: cva6/i_frontend/i_instr_realign
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        156         0.5
+                               LUTGATE	        156         0.6
+                                PFUREG	         48         0.5
+---------------------------------------------------
+Report for cell ras__gen2_4_2_4_layer0
+   Instance path: cva6/i_frontend/ras_gen.i_ras
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         68         0.2
+                               LUTGATE	         68         0.3
+                                PFUREG	         66         0.7
+---------------------------------------------------
+Report for cell btb__gen3__gen4_5_Z5_layer0
+   Instance path: cva6/i_frontend/btb_gen.i_btb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        708         2.5
+                               LUTGATE	        708         2.8
+                                PFUREG	       1056        11.2
+---------------------------------------------------
+Report for cell bht__gen5_6_128_1s_64_1s_1s_8s_6_layer0
+   Instance path: cva6/i_frontend/bht_gen.i_bht
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        721         2.5
+                               LUTGATE	        721         2.9
+                                PFUREG	        384         4.1
+---------------------------------------------------
+Report for cell instr_scan_7_layer0_1
+   Instance path: cva6/i_frontend/gen_instr_scan[0].i_instr_scan
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        606         2.1
+                               LUTGATE	        606         2.4
+---------------------------------------------------
+Report for cell instr_scan_7_layer0_0
+   Instance path: cva6/i_frontend/gen_instr_scan[1].i_instr_scan
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         37         0.1
+                               LUTGATE	         37         0.1
+---------------------------------------------------
+Report for cell instr_queue__internal_typedef_16_1_0s_2_layer0
+   Instance path: cva6/i_frontend/i_instr_queue
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        624         2.2
+                               LUTGATE	        592         2.3
+                                LUTCCU	         32         0.9
+                                PFUREG	        736         7.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+          cva6_fifo_v3_0_32_2s_0_1s_2s	          1         1.0
+ cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s	          1         0.6
+ cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s	          1         0.6
+                      popcount_2_2s_2s	          1         0.0
+---------------------------------------------------
+Report for cell popcount_2_2s_2s
+   Instance path: cva6/i_frontend/i_instr_queue/gen_multiple_instr_per_fetch_with_C.i_popcount
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s
+   Instance path: cva6/i_frontend/i_instr_queue/gen_instr_fifo[0].i_fifo_instr_data
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        172         0.6
+                               LUTGATE	        172         0.7
+                                PFUREG	        283         3.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s
+   Instance path: cva6/i_frontend/i_instr_queue/gen_instr_fifo[1].i_fifo_instr_data
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        166         0.6
+                               LUTGATE	        166         0.7
+                                PFUREG	        283         3.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3_0_32_2s_0_1s_2s
+   Instance path: cva6/i_frontend/i_instr_queue/i_fifo_address
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        281         1.0
+                               LUTGATE	        249         1.0
+                                LUTCCU	         32         0.9
+                                PFUREG	        132         1.4
+---------------------------------------------------
+Report for cell id_stage__internal_typedef_10__internal_typedef_11__internal_typedef_16__internal_typedef_19__internal_typedef_17__internal_typedef_46__internal_typedef_37__internal_typedef_38_7_Z8_layer0
+   Instance path: cva6/id_stage_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        657         2.3
+                               LUTGATE	        657         2.6
+                                PFUREG	        168         1.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+           compressed_decoder_9_layer0	          1         0.8
+cvxif_compressed_if_driver__gen6__gen7_8__gen7_10_layer0	          1         0.1
+decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0	          1         1.3
+---------------------------------------------------
+Report for cell compressed_decoder_9_layer0
+   Instance path: cva6/id_stage_i/genblk1.genblk1[0].compressed_decoder_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        228         0.8
+                               LUTGATE	        228         0.9
+---------------------------------------------------
+Report for cell cvxif_compressed_if_driver__gen6__gen7_8__gen7_10_layer0
+   Instance path: cva6/id_stage_i/genblk1.genblk2.i_cvxif_compressed_if_driver_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         38         0.1
+                               LUTGATE	         38         0.2
+---------------------------------------------------
+Report for cell decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0
+   Instance path: cva6/id_stage_i/genblk2[0].decoder_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        387         1.3
+                               LUTGATE	        387         1.5
+---------------------------------------------------
+Report for cell issue_stage__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21__internal_typedef_17__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_10_Z16_layer0
+   Instance path: cva6/issue_stage_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       8518        29.5
+                               LUTGATE	       8422        33.3
+                                LUTRAM	         96        76.2
+                                PFUREG	       2256        23.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+issue_read_operands__internal_typedef_10__internal_typedef_21__internal_typedef_17_rs3_len_t__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_44_Z14_layer0	          1         9.9
+scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0	          1        19.7
+---------------------------------------------------
+Report for cell scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0
+   Instance path: cva6/issue_stage_i/i_scoreboard
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       5673        19.7
+                               LUTGATE	       5577        22.1
+                                LUTRAM	         96        76.2
+                                PFUREG	       1071        11.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+rr_arb_tree_12_32_1_0_1_4__internal_typedef_6_0	          1         1.1
+rr_arb_tree_12_32_1_1_0_1_4__internal_typedef_6	          1         3.9
+rr_arb_tree__gen14_13_9_32s_1_1_0_1_4__internal_typedef_98	          1         0.1
+rr_arb_tree__gen15_14_9_32s_1_1_0_1_4__internal_typedef_100	          1         0.1
+rr_arb_tree__gen16_15_9_32s_1_1_0_1_4__internal_typedef_102	          1         0.1
+rr_arb_tree__gen17_16_9_32s_1_1_0_1_4__internal_typedef_104	          1         0.1
+rr_arb_tree__gen18_17_9_32s_1_1_0_1_4__internal_typedef_106	          1         0.1
+rr_arb_tree__gen19_18_9_32s_1_1_0_1_4__internal_typedef_108	          1         0.1
+rr_arb_tree__gen20_19_9_32s_1_1_0_1_4__internal_typedef_110	          1         0.1
+rr_arb_tree__gen21_20_9_32s_1_1_0_1_4__internal_typedef_112	          1         0.1
+rr_arb_tree__gen22_21_9_32s_1_1_0_1_4__internal_typedef_114	          1         0.1
+rr_arb_tree__gen23_22_9_32s_1_1_0_1_4__internal_typedef_116	          1         0.1
+rr_arb_tree__gen24_23_9_32s_1_1_0_1_4__internal_typedef_118	          1         0.1
+rr_arb_tree__gen25_24_9_32s_1_1_0_1_4__internal_typedef_120	          1         0.1
+rr_arb_tree__gen26_25_9_32s_1_1_0_1_4__internal_typedef_122	          1         0.1
+rr_arb_tree__gen27_26_9_32s_1_1_0_1_4__internal_typedef_124	          1         0.1
+rr_arb_tree__gen28_27_9_32s_1_1_0_1_4__internal_typedef_126	          1         0.1
+rr_arb_tree__gen29_28_9_32s_1_1_0_1_4__internal_typedef_128	          1         0.1
+rr_arb_tree__gen30_29_9_32s_1_1_0_1_4__internal_typedef_130	          1         0.1
+rr_arb_tree__gen31_30_9_32s_1_1_0_1_4__internal_typedef_132	          1         0.1
+rr_arb_tree__gen32_31_9_32s_1_1_0_1_4__internal_typedef_134	          1         0.2
+rr_arb_tree__gen33_32_9_32s_1_1_0_1_4__internal_typedef_136	          1         0.1
+rr_arb_tree__gen34_33_9_32s_1_1_0_1_4__internal_typedef_138	          1         0.1
+rr_arb_tree__gen35_34_9_32s_1_1_0_1_4__internal_typedef_140	          1         0.1
+rr_arb_tree__gen36_35_9_32s_1_1_0_1_4__internal_typedef_142	          1         0.1
+rr_arb_tree__gen37_36_9_32s_1_1_0_1_4__internal_typedef_144	          1         0.1
+rr_arb_tree__gen38_37_9_32s_1_1_0_1_4__internal_typedef_146	          1         0.1
+rr_arb_tree__gen39_38_9_32s_1_1_0_1_4__internal_typedef_148	          1         0.1
+rr_arb_tree__gen40_39_9_32s_1_1_0_1_4__internal_typedef_150	          1         1.8
+rr_arb_tree__gen41_40_9_32s_1_1_0_1_4__internal_typedef_152	          1         0.1
+rr_arb_tree__gen42_41_9_32s_1_1_0_1_4__internal_typedef_154	          1         0.1
+rr_arb_tree__gen43_42_9_32s_1_1_0_1_4__internal_typedef_156	          1         0.1
+rr_arb_tree__gen44_43_9_32s_1_1_0_1_4__internal_typedef_158	          1         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen40_39_9_32s_1_1_0_1_4__internal_typedef_150
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[27].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        522         1.8
+                               LUTGATE	        522         2.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen44_43_9_32s_1_1_0_1_4__internal_typedef_158
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[31].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29         0.1
+                               LUTGATE	         29         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen17_16_9_32s_1_1_0_1_4__internal_typedef_104
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[4].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         25         0.1
+                               LUTGATE	         25         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen41_40_9_32s_1_1_0_1_4__internal_typedef_152
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[28].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         38         0.1
+                               LUTGATE	         38         0.2
+---------------------------------------------------
+Report for cell rr_arb_tree__gen14_13_9_32s_1_1_0_1_4__internal_typedef_98
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[1].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29         0.1
+                               LUTGATE	         29         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen18_17_9_32s_1_1_0_1_4__internal_typedef_106
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[5].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.1
+                               LUTGATE	         27         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen42_41_9_32s_1_1_0_1_4__internal_typedef_154
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[29].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29         0.1
+                               LUTGATE	         29         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen15_14_9_32s_1_1_0_1_4__internal_typedef_100
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[2].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31         0.1
+                               LUTGATE	         31         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen39_38_9_32s_1_1_0_1_4__internal_typedef_148
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[26].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.1
+                               LUTGATE	         26         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen24_23_9_32s_1_1_0_1_4__internal_typedef_118
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[11].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.1
+                               LUTGATE	         27         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen29_28_9_32s_1_1_0_1_4__internal_typedef_128
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[16].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.1
+                               LUTGATE	         26         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen21_20_9_32s_1_1_0_1_4__internal_typedef_112
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[8].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         33         0.1
+                               LUTGATE	         33         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen26_25_9_32s_1_1_0_1_4__internal_typedef_122
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[13].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31         0.1
+                               LUTGATE	         31         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen38_37_9_32s_1_1_0_1_4__internal_typedef_146
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[25].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.1
+                               LUTGATE	         27         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen19_18_9_32s_1_1_0_1_4__internal_typedef_108
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[6].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.1
+                               LUTGATE	         24         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen43_42_9_32s_1_1_0_1_4__internal_typedef_156
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[30].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.1
+                               LUTGATE	         27         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen16_15_9_32s_1_1_0_1_4__internal_typedef_102
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[3].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29         0.1
+                               LUTGATE	         29         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen35_34_9_32s_1_1_0_1_4__internal_typedef_140
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[22].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         21         0.1
+                               LUTGATE	         21         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen34_33_9_32s_1_1_0_1_4__internal_typedef_138
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[21].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.1
+                               LUTGATE	         24         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen32_31_9_32s_1_1_0_1_4__internal_typedef_134
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[19].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         51         0.2
+                               LUTGATE	         51         0.2
+---------------------------------------------------
+Report for cell rr_arb_tree__gen31_30_9_32s_1_1_0_1_4__internal_typedef_132
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[18].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.1
+                               LUTGATE	         26         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen23_22_9_32s_1_1_0_1_4__internal_typedef_116
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[10].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         32         0.1
+                               LUTGATE	         32         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen28_27_9_32s_1_1_0_1_4__internal_typedef_126
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[15].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.1
+                               LUTGATE	         26         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen20_19_9_32s_1_1_0_1_4__internal_typedef_110
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[7].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         30         0.1
+                               LUTGATE	         30         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen25_24_9_32s_1_1_0_1_4__internal_typedef_120
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[12].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         22         0.1
+                               LUTGATE	         22         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen30_29_9_32s_1_1_0_1_4__internal_typedef_130
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[17].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.1
+                               LUTGATE	         35         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen22_21_9_32s_1_1_0_1_4__internal_typedef_114
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[9].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.1
+                               LUTGATE	         27         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen36_35_9_32s_1_1_0_1_4__internal_typedef_142
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[23].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         27         0.1
+                               LUTGATE	         27         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen33_32_9_32s_1_1_0_1_4__internal_typedef_136
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[20].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31         0.1
+                               LUTGATE	         31         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen37_36_9_32s_1_1_0_1_4__internal_typedef_144
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[24].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         0.1
+                               LUTGATE	         28         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree__gen27_26_9_32s_1_1_0_1_4__internal_typedef_124
+   Instance path: cva6/issue_stage_i/i_scoreboard/gen_sel_clobbers[14].i_sel_gpr_clobbers
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         0.1
+                               LUTGATE	         28         0.1
+---------------------------------------------------
+Report for cell rr_arb_tree_12_32_1_1_0_1_4__internal_typedef_6
+   Instance path: cva6/issue_stage_i/i_scoreboard/genblk4[0].i_sel_rs1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1120         3.9
+                               LUTGATE	       1120         4.4
+---------------------------------------------------
+Report for cell rr_arb_tree_12_32_1_0_1_4__internal_typedef_6_0
+   Instance path: cva6/issue_stage_i/i_scoreboard/genblk4[0].i_sel_rs2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        324         1.1
+                               LUTGATE	        324         1.3
+---------------------------------------------------
+Report for cell issue_read_operands__internal_typedef_10__internal_typedef_21__internal_typedef_17_rs3_len_t__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_44_Z14_layer0
+   Instance path: cva6/issue_stage_i/i_issue_read_operands
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2844         9.9
+                               LUTGATE	       2844        11.3
+                                PFUREG	       1185        12.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ariane_regfile_32_2_18446744073709551615s_5s_32s_15_layer0	          1         8.4
+---------------------------------------------------
+Report for cell ariane_regfile_32_2_18446744073709551615s_5s_32s_15_layer0
+   Instance path: cva6/issue_stage_i/i_issue_read_operands/gen_asic_regfile.i_ariane_regfile
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2416         8.4
+                               LUTGATE	       2416         9.6
+                                PFUREG	        992        10.5
+---------------------------------------------------
+Report for cell ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_46_Z38_layer0
+   Instance path: cva6/ex_stage_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	       0.50        100.0
+                                  LUT4	       8287        28.7
+                               LUTGATE	       6027        23.9
+                                LUTCCU	       2260        65.3
+                                PFUREG	       1540        16.3
+                                MULT18	          4        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+alu__internal_typedef_21_47_1__internal_typedef_21_17_layer0	          1         2.0
+branch_unit__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21_48__internal_typedef_21_18_layer0	          1         0.8
+csr_buffer__internal_typedef_21_49__internal_typedef_21_19_layer0	          1         0.0
+load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0	          1        22.0
+mult__internal_typedef_21_50__internal_typedef_21_22_layer0	          1         3.1
+---------------------------------------------------
+Report for cell load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0
+   Instance path: cva6/ex_stage_i/lsu_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	       0.50        100.0
+                                  LUT4	       6348        22.0
+                               LUTGATE	       4408        17.5
+                                LUTCCU	       1940        56.1
+                                PFUREG	       1304        13.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0	          1        17.6
+load_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_55_0_1s_26_layer0	          1         0.6
+lsu_bypass__internal_typedef_20_58__internal_typedef_20_27_layer0	          1         1.2
+  shift_reg__internal_typedef_159_56_1	          1         0.0
+store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_52__internal_typedef_20_24_layer0	          1         2.4
+---------------------------------------------------
+Report for cell cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       5082        17.6
+                               LUTGATE	       3228        12.8
+                                LUTCCU	       1854        53.6
+                                PFUREG	        345         3.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+cva6_ptw__internal_typedef_162__internal_typedef_163__gen50__gen51_63_0s_36_layer0	          1         4.7
+cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0	          1         1.8
+                  pmp_34_32_8_layer0_1	          1         5.7
+                  pmp_34_32_8_layer0_2	          1         4.9
+---------------------------------------------------
+Report for cell cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_shared_tlb
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        509         1.8
+                               LUTGATE	        509         2.0
+                                PFUREG	        173         1.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+         lfsr_8s_1s_255_0s_1_31_layer0	          1         0.0
+                          lzc_2s_0_1_0	          1         0.2
+---------------------------------------------------
+Report for cell lzc_2s_0_1_0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_shared_tlb/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         44         0.2
+                               LUTGATE	         44         0.2
+---------------------------------------------------
+Report for cell lfsr_8s_1s_255_0s_1_31_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_shared_tlb/i_lfsr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.0
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell cva6_ptw__internal_typedef_162__internal_typedef_163__gen50__gen51_63_0s_36_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1363         4.7
+                               LUTGATE	        755         3.0
+                                LUTCCU	        608        17.6
+                                PFUREG	        103         1.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                  pmp_34_32_8_layer0_0	          1         4.4
+---------------------------------------------------
+Report for cell pmp_34_32_8_layer0_0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1277         4.4
+                               LUTGATE	        669         2.6
+                                LUTCCU	        608        17.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+         pmp_entry_34_32_35_layer0_7_7	          1         0.4
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_0	          1         0.5
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_1	          1         0.5
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_2	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_3	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_4	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_5	          1         0.6
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_7_7
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[0].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        103         0.4
+                               LUTGATE	         55         0.2
+                                LUTCCU	         48         1.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[1].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        176         0.6
+                               LUTGATE	         96         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          lzc_34_0_6_3	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_3
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[1].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         94         0.3
+                               LUTGATE	         94         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[2].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        158         0.5
+                               LUTGATE	         78         0.3
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          lzc_34_0_6_5	          1         0.2
+---------------------------------------------------
+Report for cell lzc_34_0_6_5
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[2].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         68         0.2
+                               LUTGATE	         68         0.3
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_1
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[3].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        153         0.5
+                               LUTGATE	         73         0.3
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_21	          1         0.2
+---------------------------------------------------
+Report for cell lzc_34_0_6_21
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[3].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         71         0.2
+                               LUTGATE	         71         0.3
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_2
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[4].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        176         0.6
+                               LUTGATE	         96         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_25	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_25
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[4].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         94         0.3
+                               LUTGATE	         94         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_3
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[5].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        170         0.6
+                               LUTGATE	         90         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_26	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_26
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[5].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         88         0.3
+                               LUTGATE	         88         0.3
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_4
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[6].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        171         0.6
+                               LUTGATE	         91         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_27	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_27
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[6].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         89         0.3
+                               LUTGATE	         89         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2_6_5
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[7].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        160         0.6
+                               LUTGATE	         80         0.3
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_28	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_28
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_ptw/i_pmp_ptw/gen_pmp.genblk1[7].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         79         0.3
+                               LUTGATE	         79         0.3
+---------------------------------------------------
+Report for cell pmp_34_32_8_layer0_2
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1425         4.9
+                               LUTGATE	        817         3.2
+                                LUTCCU	        608        17.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+         pmp_entry_34_32_35_layer0_7_8	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_0	          1         0.7
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_1	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_2	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_3	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_4	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_5	          1         0.6
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_7_8
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[0].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        165         0.6
+                               LUTGATE	        117         0.5
+                                LUTCCU	         48         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_29	          1         0.2
+---------------------------------------------------
+Report for cell lzc_34_0_6_29
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[0].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         44         0.2
+                               LUTGATE	         44         0.2
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[1].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        167         0.6
+                               LUTGATE	         87         0.3
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_30	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_30
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[1].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         82         0.3
+                               LUTGATE	         82         0.3
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[2].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        190         0.7
+                               LUTGATE	        110         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_31	          1         0.4
+---------------------------------------------------
+Report for cell lzc_34_0_6_31
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[2].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        108         0.4
+                               LUTGATE	        108         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_1
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[3].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        181         0.6
+                               LUTGATE	        101         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_32	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_32
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[3].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         98         0.3
+                               LUTGATE	         98         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_2
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[4].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        180         0.6
+                               LUTGATE	        100         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_33	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_33
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[4].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        100         0.3
+                               LUTGATE	        100         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_3
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[5].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        168         0.6
+                               LUTGATE	         88         0.3
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_34	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_34
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[5].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         88         0.3
+                               LUTGATE	         88         0.3
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_4
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[6].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        170         0.6
+                               LUTGATE	         90         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_35	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_35
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[6].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         90         0.3
+                               LUTGATE	         90         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1_6_5
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[7].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        178         0.6
+                               LUTGATE	         98         0.4
+                                LUTCCU	         80         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_36	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_36
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_if/gen_pmp.genblk1[7].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         98         0.3
+                               LUTGATE	         98         0.4
+---------------------------------------------------
+Report for cell pmp_34_32_8_layer0_1
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1646         5.7
+                               LUTGATE	       1008         4.0
+                                LUTCCU	        638        18.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+        pmp_entry_34_32_35_layer0_7_16	          1         0.7
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0	          1         0.7
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_0	          1         0.9
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1	          1         0.7
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2	          1         0.7
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_3	          1         0.7
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_4	          1         0.6
+pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_5	          1         0.6
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_7_16
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[0].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        207         0.7
+                               LUTGATE	        157         0.6
+                                LUTCCU	         50         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_37	          1         0.1
+---------------------------------------------------
+Report for cell lzc_34_0_6_37
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[0].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         17         0.1
+                               LUTGATE	         17         0.1
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[1].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        190         0.7
+                               LUTGATE	        106         0.4
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_38	          1         0.1
+---------------------------------------------------
+Report for cell lzc_34_0_6_38
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[1].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         17         0.1
+                               LUTGATE	         17         0.1
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_0
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[2].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        274         0.9
+                               LUTGATE	        190         0.8
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_39	          1         0.5
+---------------------------------------------------
+Report for cell lzc_34_0_6_39
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[2].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        139         0.5
+                               LUTGATE	        139         0.6
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_1
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[3].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        208         0.7
+                               LUTGATE	        124         0.5
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_40	          1         0.1
+---------------------------------------------------
+Report for cell lzc_34_0_6_40
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[3].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         0.1
+                               LUTGATE	         28         0.1
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_2
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[4].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        207         0.7
+                               LUTGATE	        123         0.5
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_41	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_41
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[4].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         97         0.3
+                               LUTGATE	         97         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_3
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[5].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        194         0.7
+                               LUTGATE	        110         0.4
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_42	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_42
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[5].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         92         0.3
+                               LUTGATE	         92         0.4
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_4
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[6].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        178         0.6
+                               LUTGATE	         94         0.4
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_43	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_43
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[6].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         80         0.3
+                               LUTGATE	         80         0.3
+---------------------------------------------------
+Report for cell pmp_entry_34_32_35_layer0_load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0_5
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[7].i_pmp_entry
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        187         0.6
+                               LUTGATE	        103         0.4
+                                LUTCCU	         84         2.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         lzc_34_0_6_44	          1         0.3
+---------------------------------------------------
+Report for cell lzc_34_0_6_44
+   Instance path: cva6/ex_stage_i/lsu_i/gen_mmu.i_cva6_mmu/i_pmp_data/gen_pmp.genblk1[7].i_pmp_entry/i_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         85         0.3
+                               LUTGATE	         85         0.3
+---------------------------------------------------
+Report for cell store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_52__internal_typedef_20_24_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/i_store_unit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	       0.50        100.0
+                                  LUT4	        696         2.4
+                               LUTGATE	        642         2.5
+                                LUTCCU	         54         1.6
+                                PFUREG	        682         7.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                  amo_buffer_25_layer0	          1         0.0
+store_buffer__internal_typedef_24__internal_typedef_25_53__internal_typedef_25_23_layer0	          1         2.1
+---------------------------------------------------
+Report for cell store_buffer__internal_typedef_24__internal_typedef_25_53__internal_typedef_25_23_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/i_store_unit/store_buffer_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        598         2.1
+                               LUTGATE	        544         2.2
+                                LUTCCU	         54         1.6
+                                PFUREG	        566         6.0
+---------------------------------------------------
+Report for cell amo_buffer_25_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/i_store_unit/genblk1.i_amo_buffer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.0
+                                PFUREG	         72         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+cva6_fifo_v3_amo_op_t_54_0_32s_1s_0_1s_1s	          1         0.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3_amo_op_t_54_0_32s_1s_0_1s_1s
+   Instance path: cva6/ex_stage_i/lsu_i/i_store_unit/genblk1.i_amo_buffer/i_amo_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+                                PFUREG	         72         0.8
+---------------------------------------------------
+Report for cell load_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_55_0_1s_26_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/i_load_unit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        160         0.6
+                               LUTGATE	        160         0.6
+                                PFUREG	         36         0.4
+---------------------------------------------------
+Report for cell shift_reg__internal_typedef_159_56_1
+   Instance path: cva6/ex_stage_i/lsu_i/i_pipe_reg_load
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	         73         0.8
+---------------------------------------------------
+Report for cell lsu_bypass__internal_typedef_20_58__internal_typedef_20_27_layer0
+   Instance path: cva6/ex_stage_i/lsu_i/lsu_bypass_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        349         1.2
+                               LUTGATE	        349         1.4
+                                PFUREG	        168         1.8
+---------------------------------------------------
+Report for cell alu__internal_typedef_21_47_1__internal_typedef_21_17_layer0
+   Instance path: cva6/ex_stage_i/alu_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        578         2.0
+                               LUTGATE	        510         2.0
+                                LUTCCU	         68         2.0
+---------------------------------------------------
+Report for cell branch_unit__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21_48__internal_typedef_21_18_layer0
+   Instance path: cva6/ex_stage_i/branch_unit_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        239         0.8
+                               LUTGATE	        161         0.6
+                                LUTCCU	         78         2.3
+---------------------------------------------------
+Report for cell csr_buffer__internal_typedef_21_49__internal_typedef_21_19_layer0
+   Instance path: cva6/ex_stage_i/csr_buffer_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.0
+                                PFUREG	         16         0.2
+---------------------------------------------------
+Report for cell mult__internal_typedef_21_50__internal_typedef_21_22_layer0
+   Instance path: cva6/ex_stage_i/i_mult
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        888         3.1
+                               LUTGATE	        714         2.8
+                                LUTCCU	        174         5.0
+                                PFUREG	        220         2.3
+                                MULT18	          4        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                  multiplier_20_layer0	          1         0.3
+                serdiv_32_0s_21_layer0	          1         2.8
+---------------------------------------------------
+Report for cell multiplier_20_layer0
+   Instance path: cva6/ex_stage_i/i_mult/i_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         89         0.3
+                               LUTGATE	         41         0.2
+                                LUTCCU	         48         1.4
+                                PFUREG	         75         0.8
+                                MULT18	          4        100.0
+---------------------------------------------------
+Report for cell serdiv_32_0s_21_layer0
+   Instance path: cva6/ex_stage_i/i_mult/i_div
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        799         2.8
+                               LUTGATE	        673         2.7
+                                LUTCCU	        126         3.6
+                                PFUREG	        145         1.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+   lzc_32_18446744073709551615s_5_cva6	          1         0.8
+ lzc_32_18446744073709551615s_5_cva6_0	          1         0.2
+---------------------------------------------------
+Report for cell lzc_32_18446744073709551615s_5_cva6
+   Instance path: cva6/ex_stage_i/i_mult/i_div/i_lzc_a
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        220         0.8
+                               LUTGATE	        220         0.9
+---------------------------------------------------
+Report for cell lzc_32_18446744073709551615s_5_cva6_0
+   Instance path: cva6/ex_stage_i/i_mult/i_div/i_lzc_b
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         59         0.2
+                               LUTGATE	         59         0.2
+---------------------------------------------------
+Report for cell commit_stage__internal_typedef_11__internal_typedef_17_64__internal_typedef_17_39_layer0
+   Instance path: cva6/commit_stage_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        155         0.5
+                               LUTGATE	        155         0.6
+---------------------------------------------------
+Report for cell csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_65_Z40_layer0
+   Instance path: cva6/csr_regfile_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2358         8.2
+                               LUTGATE	       2174         8.6
+                                LUTCCU	        184         5.3
+                                 IOREG	          3        75.0
+                                PFUREG	       1050        11.1
+---------------------------------------------------
+Report for cell perf_counters__gen52__gen53__gen54__gen55__gen56__gen57_68_4s_43_layer0
+   Instance path: cva6/gen_perf_counter.perf_counters_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1471         5.1
+                               LUTGATE	       1063         4.2
+                                LUTRAM	         12         9.5
+                                LUTCCU	        396        11.4
+                                PFUREG	        472         5.0
+---------------------------------------------------
+Report for cell controller__internal_typedef_18_66__internal_typedef_18_41_layer0
+   Instance path: cva6/controller_i
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          9         0.0
+                               LUTGATE	          9         0.0
+---------------------------------------------------
+Report for cell wt_cache_subsystem__gen58__gen59__gen60__gen61__gen62__gen63__gen64__gen65__gen66__gen67_69_Z57_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       4310        14.9
+                               LUTGATE	       3828        15.2
+                                LUTRAM	         18        14.3
+                                LUTCCU	        464        13.4
+                                 IOREG	          1        25.0
+                                PFUREG	       1537        16.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0	          1         0.5
+wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0	          1         1.7
+wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0	          1        12.8
+---------------------------------------------------
+Report for cell wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       3685        12.8
+                               LUTGATE	       3223        12.8
+                                LUTRAM	          6         4.8
+                                LUTCCU	        456        13.2
+                                PFUREG	        919         9.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+wt_dcache_ctrl__gen68__gen69_77_8s_1_53_layer0	          1         0.1
+wt_dcache_ctrl__gen70__gen71_78_8s_1_54_layer0	          1         0.1
+wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0	          1         2.5
+wt_dcache_missunit__internal_typedef_165__internal_typedef_166_72_8s_1_4s_48_layer0	          1         2.1
+wt_dcache_wbuffer__gen64__gen65__internal_typedef_167_73_8s__internal_typedef_167_49_layer0	          1         8.0
+---------------------------------------------------
+Report for cell wt_dcache_missunit__internal_typedef_165__internal_typedef_166_72_8s_1_4s_48_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_missunit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        620         2.1
+                               LUTGATE	        484         1.9
+                                LUTCCU	        136         3.9
+                                PFUREG	        111         1.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                exp_backoff_3s_16s_16s	          1         0.2
+---------------------------------------------------
+Report for cell exp_backoff_3s_16s_16s
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_missunit/i_exp_backoff
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         72         0.2
+                               LUTGATE	         56         0.2
+                                LUTCCU	         16         0.5
+                                PFUREG	         48         0.5
+---------------------------------------------------
+Report for cell wt_dcache_ctrl__gen68__gen69_77_8s_1_53_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/gen_rd_ports[0].genblk1.i_wt_dcache_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.1
+                               LUTGATE	         20         0.1
+                                PFUREG	         40         0.4
+---------------------------------------------------
+Report for cell wt_dcache_ctrl__gen70__gen71_78_8s_1_54_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/gen_rd_ports[1].genblk1.i_wt_dcache_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         0.1
+                               LUTGATE	         28         0.1
+                                PFUREG	         44         0.5
+---------------------------------------------------
+Report for cell wt_dcache_wbuffer__gen64__gen65__internal_typedef_167_73_8s__internal_typedef_167_49_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2305         8.0
+                               LUTGATE	       2107         8.3
+                                LUTRAM	          6         4.8
+                                LUTCCU	        192         5.5
+                                PFUREG	        710         7.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+            cva6_fifo_v3_0_2s_4_0_2s_4	          1         0.0
+                             lzc_4_0_2	          1         0.0
+                           lzc_8_0_3_6	          1         0.0
+lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0	          1         0.0
+rr_arb_tree_4_1s_0_0_1_1_2__internal_typedef_6	          1         2.9
+rr_arb_tree__internal_typedef_167_74_8_32s_0_0_1_1_3__internal_typedef_169	          1         1.4
+rr_arb_tree__internal_typedef_167_75_8_32s_0_0_0_1_3__internal_typedef_171	          1         0.7
+---------------------------------------------------
+Report for cell lzc_4_0_2
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_vld_bdirty
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3_0_2s_4_0_2s_4
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_rtrn_id_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          9         0.0
+                               LUTGATE	          9         0.0
+                                PFUREG	         15         0.2
+---------------------------------------------------
+Report for cell rr_arb_tree_4_1s_0_0_1_1_2__internal_typedef_6
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_tx_id_rr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        833         2.9
+                               LUTGATE	        833         3.3
+                                PFUREG	          7         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           lzc_4_0_2_3	          1         0.0
+---------------------------------------------------
+Report for cell lzc_4_0_2_3
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_tx_id_rr/gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_6
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_vld_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_hit_lzc
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.0
+---------------------------------------------------
+Report for cell rr_arb_tree__internal_typedef_167_74_8_32s_0_0_1_1_3__internal_typedef_169
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_dirty_rr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        406         1.4
+                               LUTGATE	        406         1.6
+                                PFUREG	         12         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0	          1         0.0
+lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0_0	          1         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_dirty_rr/gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.0
+                               LUTGATE	          6         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0_0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_dirty_rr/gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell rr_arb_tree__internal_typedef_167_75_8_32s_0_0_0_1_3__internal_typedef_171
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_clean_rr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        188         0.7
+                               LUTGATE	        188         0.7
+                                PFUREG	          3         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0_1	          1         0.0
+lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_1	          1         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_1
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_clean_rr/gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_upper
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         11         0.0
+                               LUTGATE	         11         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0_1
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_wbuffer/i_clean_rr/gen_arbiter.gen_int_rr.gen_fair_arb.i_lzc_lower
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+---------------------------------------------------
+Report for cell wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        712         2.5
+                               LUTGATE	        584         2.3
+                                LUTCCU	        128         3.7
+                                PFUREG	         14         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0_2	          1         0.5
+rr_arb_tree_4s_1s_0_0_0_1_2__internal_typedef_6	          1         0.0
+---------------------------------------------------
+Report for cell rr_arb_tree_4s_1s_0_0_0_1_2__internal_typedef_6
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/i_rr_arb_tree
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.0
+                               LUTGATE	          6         0.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell lzc_8_0_3_wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0_0_2
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/i_lzc_wbuffer_hit
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        155         0.5
+                               LUTGATE	        155         0.6
+---------------------------------------------------
+Report for cell cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_cva6_icache
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        131         0.5
+                               LUTGATE	        123         0.5
+                                LUTCCU	          8         0.2
+                                PFUREG	         70         0.7
+---------------------------------------------------
+Report for cell wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        494         1.7
+                               LUTGATE	        482         1.9
+                                LUTRAM	         12         9.5
+                                 IOREG	          1        25.0
+                                PFUREG	        548         5.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+axi_shim__gen66__gen67_82_2_1s_55_layer0	          1         0.0
+             cva6_fifo_v3_0_2_4_2s_4_0	          1         0.1
+             cva6_fifo_v3_0_2_4_2s_4_1	          1         0.1
+             cva6_fifo_v3_0_2_4_2s_4_2	          1         1.0
+             cva6_fifo_v3_1_5_4_0_2s_4	          1         0.3
+cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s	          1         0.0
+cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s	          1         0.2
+rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_6	          1         0.0
+---------------------------------------------------
+Report for cell rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_6
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_rr_arb_tree
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.0
+                               LUTGATE	          7         0.0
+                                PFUREG	          4         0.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_icache_data_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.0
+                               LUTGATE	          7         0.0
+                                PFUREG	         64         0.7
+---------------------------------------------------
+Report for cell cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_dcache_data_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         65         0.2
+                               LUTGATE	         65         0.3
+                                PFUREG	        158         1.7
+---------------------------------------------------
+Report for cell cva6_fifo_v3_0_2_4_2s_4_2
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_rd_icache_id
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        277         1.0
+                               LUTGATE	        277         1.1
+                                PFUREG	          3         0.0
+---------------------------------------------------
+Report for cell cva6_fifo_v3_0_2_4_2s_4_1
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_rd_dcache_id
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         18         0.1
+                               LUTGATE	         18         0.1
+                                PFUREG	         15         0.2
+---------------------------------------------------
+Report for cell cva6_fifo_v3_0_2_4_2s_4_0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_wr_dcache_id
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         29         0.1
+                               LUTGATE	         29         0.1
+                                PFUREG	         15         0.2
+---------------------------------------------------
+Report for cell cva6_fifo_v3_1_5_4_0_2s_4
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_b_fifo
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         80         0.3
+                               LUTGATE	         68         0.3
+                                LUTRAM	         12         9.5
+                                PFUREG	         11         0.1
+---------------------------------------------------
+Report for cell axi_shim__gen66__gen67_82_2_1s_55_layer0
+   Instance path: cva6/gen_cache_wt.i_cache_subsystem/i_adapter/i_axi_shim
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          9         0.0
+                               LUTGATE	          9         0.0
+                                PFUREG	          2         0.0

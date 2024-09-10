@@ -1,0 +1,2122 @@
+
+                         Lattice Mapping Report File
+
+Design:  cva6
+Family:  LAV-AT
+Device:  LAV-AT-E70ES1
+Package: LFG676
+Performance Grade:  1
+
+Mapper:    version Radiant Software (64-bit) 2024.1.0.34.2
+Mapped on: Tue Sep 10 12:18:00 2024
+
+Design Information
+------------------
+
+Command line:   map -i cva6_1_impl_1_syn.udb -o cva6_1_impl_1_map.udb -mp
+     cva6_1_impl_1.mrp -hierrpt -gui -msgset
+     /home/anonymous/code/cva6/corev_apu/fpga/lattice/promote.xml
+
+Design Summary
+--------------
+
+   Number of registers:        9451 out of 398343 (2%)
+      Number of SLICE         registers: 9447 out of 397440 (2%)
+      Number of PIO Input     registers:    4 out of   301 (1%)
+      Number of PIO Output    registers:    0 out of   301 (0%)
+      Number of PIO Tri-State registers:    0 out of   301 (0%)
+   Number of LUT4s:            28844 out of 397440 (7%)
+      Number used as logic LUT4s:            25258
+      Number used as distributed RAM:          126 (6 per 16X4 or 32X2 RAM)
+      Number used as ripple logic:            3460 (2 per CCU2)
+   Number of PIOs used/reserved: 1418 out of   301 (471%)
+      Number of wide range IOs used/reserved:    4 out of   46 (9%)
+      Number of high performance IOs used/reserved:    0 out of  255 (0%)
+      Number of generic IOs used: 1414
+                                 (either wide range or high performance)
+      Number of wide range IOs reserved:    4 (per sysConfig/prohibit
+                                                  constraint)
+      Number of IOs used: 1414
+        Number used for single ended IO: 1414
+        Number of pairs used for differential IO:    0
+        Number allocated to wide range IOs:    0 out of   46 (0%)
+        Number allocated to high performance IOs:    0 out of  255 (0%)
+        Number not allocated: 1414
+                              (either wide range or high performance)
+   Number of IDDR/ODDR functions used:      0 out of   602 (0%)
+   Number of IOs using at least one DDR function: 0 (0 differential)
+   Minimum Number of 32K Block RAMs:      1 out of 990 (<1%)
+   (PAR may use additional resources. Please refer to PAR report for final
+     resource utilization numbers)
+      Number of 16K-RAM:          1
+   Minimum Number of DSP Blocks:          4 out of 1800 (<1%)
+   (PAR may use additional resources. Please refer to PAR report for final
+     resource utilization numbers)
+      Number of MULT18X18:        2
+      Number of MULTADDSUB18X18:  2
+   Number of PLLs:                0 out of 11 (0%)
+   Number of DDRDLLs:             0 out of 13 (0%)
+   Number of DLLDELs:             0 out of 44 (0%)
+   Number of DCSs:                0 out of 4 (0%)
+   Number of DCCs:                0 out of 344 (0%)
+   Number of ECLKDIVs:            0 out of 45 (0%)
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+   Number of ECLKSYNCs:           0 out of 54 (0%)
+   Number of DDRPHYs:             0 out of 1 (0%)
+   Number of Oscillator:          0 out of 1 (0%)
+   Number of GSR:                 0 out of 1 (0%)
+   Number of TSALL:               0 out of 1 (0%)
+   Number of JTAG:                0 out of 1 (0%)
+   Number of LMMI Slave:          0 out of 1 (0%)
+   Number of Config WDT:          0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_i_c[0]: 9473 loads, 9472 rising, 1 falling (Driver: Port clk_i)
+   Number of Clock Enables:  608
+      Net i_frontend.npc_d_8_sqmuxa_i: 32 loads, 32 SLICEs
+      Net gen_cache_wt.un1_i_cache_subsystem_1[228]: 101 loads, 101 SLICEs
+      Net i_frontend.icache_valid_q: 47 loads, 47 SLICEs
+      Net i_frontend.i_instr_realign.un1_unaligned_q8_i: 1 loads, 1 SLICEs
+      Net i_frontend.ras_gen.i_ras.ra8_i: 33 loads, 33 SLICEs
+      Net i_frontend.ras_gen.i_ras.ra_1_sqmuxa_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.N_1087_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.N_1086_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_0: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.N_1083_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.N_1077_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.N_1078_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.N_1082_i: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_1: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_2: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_3: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_4: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_5: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_6: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_7: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_8: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_9: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_10: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_11: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_12: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_13: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_14: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_15: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_16: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_17: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_18: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_19: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_20: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_21: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_22: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_23: 33 loads, 33 SLICEs
+      Net i_frontend.btb_gen.i_btb.valid_0_sqmuxa_24: 33 loads, 33 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3868_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4291_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3757_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_367_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4292_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4278_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3717_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_314_i: 2 loads, 2 SLICEs
+
+                                    Page 2
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net i_frontend.bht_gen.i_bht.N_3715_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_326_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3714_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_342_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4296_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_350_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3710_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_431_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_400_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_395_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4304_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4308_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4312_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4193_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4314_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3872_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4212_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4211_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4316_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4236_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4318_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4231_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4216_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4215_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4320_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4224_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4220_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4219_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4287_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4223_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4226_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4321_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4284_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4229_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4276_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4319_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4269_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4235_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_376_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4317_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3750_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_366_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4240_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4239_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4243_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4244_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3707_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4315_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3708_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_370_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_316_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4256_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4252_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4259_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4247_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4246_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_435_i: 2 loads, 2 SLICEs
+
+                                    Page 3
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net i_frontend.bht_gen.i_bht.N_4313_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4251_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4255_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_313_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_327_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_337_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_333_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_364_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4309_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4305_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4302_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4300_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_433_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3870_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4190_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_352_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4298_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_346_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4297_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_344_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4261_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_338_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4294_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4263_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4264_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_324_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4191_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4265_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4266_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_310_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3758_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3754_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3755_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3751_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4268_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4271_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4270_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3745_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3746_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4310_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4275_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4277_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3737_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4280_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4293_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_130_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3716_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3718_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3869_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3731_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4286_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4290_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4289_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_360_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_358_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3726_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3727_i: 2 loads, 2 SLICEs
+
+                                    Page 4
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net i_frontend.bht_gen.i_bht.N_349_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_341_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_355_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_345_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3721_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3722_i: 2 loads, 2 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_74_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3735_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3694_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_385_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4282_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4279_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3739_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_312_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_320_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_328_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_334_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_340_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4295_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_348_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3712_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4204_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_402_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_398_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_393_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4307_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4311_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4192_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4245_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3873_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4214_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4213_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4237_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4202_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4232_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4230_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4218_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4217_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4227_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3874_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4222_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4221_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4199_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4225_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4206_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4228_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4285_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4200_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4205_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4233_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4195_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4234_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3685_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4238_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3748_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_362_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4242_i: 1 loads, 1 SLICEs
+
+                                    Page 5
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net i_frontend.bht_gen.i_bht.N_4241_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4201_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4197_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_374_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3871_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_372_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_368_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_323_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_309_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4253_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4260_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4249_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4248_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4208_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4250_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4254_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4257_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_319_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_330_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4209_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4210_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_383_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4306_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4303_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4301_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4299_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_404_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3865_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_354_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3689_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4258_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3690_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3713_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3693_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4262_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_336_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_332_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4203_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4194_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_322_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_318_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4198_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4267_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3759_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3756_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3752_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3753_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3749_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4323_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4273_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4272_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3743_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3741_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_371_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4274_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4322_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3736_i: 1 loads, 1 SLICEs
+
+                                    Page 6
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net i_frontend.bht_gen.i_bht.N_4281_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4283_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3867_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3738_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3734_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3866_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3730_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4207_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4288_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_4196_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_378_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_387_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3725_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3724_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_380_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_391_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_389_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_375_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3719_i: 1 loads, 1 SLICEs
+      Net i_frontend.bht_gen.i_bht.N_3720_i: 1 loads, 1 SLICEs
+      Net i_frontend.if_ready: 32 loads, 32 SLICEs
+      Net i_frontend.i_instr_queue.reset_address_d_1_sqmuxa_i: 1 loads, 1 SLICEs
+      Net i_frontend.i_instr_queue.idx_ds_d_1_sqmuxa_i: 2 loads, 2 SLICEs
+      Net genblk4.fetch_entry_ready_o12: 167 loads, 167 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[0].i_fifo_instr_data.write_poi
+     nter_q_RNI7S1Q3[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[0].i_fifo_instr_data.write_poi
+     nter_q_RNI7S1Q3_0[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[0].i_fifo_instr_data.write_poi
+     nter_q_RNI7S1Q3_1[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[0].i_fifo_instr_data.write_poi
+     nter_q_RNI7S1Q3_2[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[1].i_fifo_instr_data.write_poi
+     nter_q_RNIA92EI[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[1].i_fifo_instr_data.write_poi
+     nter_q_RNIA92EI_0[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[1].i_fifo_instr_data.write_poi
+     nter_q_RNIA92EI_1[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.gen_instr_fifo[1].i_fifo_instr_data.write_poi
+     nter_q_RNIA92EI_2[1]: 69 loads, 69 SLICEs
+      Net i_frontend.i_instr_queue.i_fifo_address.mem_n[1]_0_sqmuxa: 32 loads,
+     32 SLICEs
+      Net i_frontend.i_instr_queue.i_fifo_address.mem_n[0]_0_sqmuxa: 32 loads,
+     32 SLICEs
+      Net id_stage_i.valid_2_sqmuxa_i: 1 loads, 1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[4].sbe.valid_2_sqmuxa_471_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[2].sbe.valid_2_sqmuxa_467_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[7].sbe.valid_2_sqmuxa_477_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[6].sbe.valid_2_sqmuxa_475_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[3].sbe.valid_2_sqmuxa_469_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[7].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+
+                                    Page 7
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net issue_stage_i.i_scoreboard.mem_n[6].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[5].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[4].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[3].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[1].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[0].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[4].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[2].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[4].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[6].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[5].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[4].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[2].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[0].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_5: 24 loads, 24 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_6: 23 loads, 23 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_2: 24 loads, 24 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_0: 23 loads, 23 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_7: 22 loads, 22 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_3: 24 loads, 24 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_1: 23 loads, 23 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_qwre_4: 22 loads, 22 SLICEs
+      Net issue_stage_i.i_scoreboard.gen_sel_clobbers[24].i_sel_gpr_clobbers.mem
+     _i2_mux: 1 loads, 1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[1].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[3].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[7].issued_1_sqmuxa_i: 1 loads, 1
+     SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[0].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[1].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[2].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[3].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[5].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[6].sbe.result_4_sqmuxa_i: 64 loads,
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[7].sbe.result_4_sqmuxa_i: 64 loads,
+
+                                    Page 8
+
+
+
+
+
+Design Summary (cont)
+---------------------
+     64 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[2].sbe.ex.valid_4_sqmuxa_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[0].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[1].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[3].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[5].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[6].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[7].sbe.ex.gva_4_sqmuxa_i: 38 loads,
+     38 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[0].sbe.valid_2_sqmuxa_463_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[1].sbe.valid_2_sqmuxa_465_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_scoreboard.mem_n[5].sbe.valid_2_sqmuxa_473_i: 1 loads,
+     1 SLICEs
+      Net issue_stage_i.i_issue_read_operands.fu_busy14: 68 loads, 68 SLICEs
+      Net csr_valid_id_ex[0]: 15 loads, 15 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[31]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[17]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[19]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[21]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[23]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[25]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[27]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[29]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[18]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[20]_1_sqmuxa_i_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[6]_1_sqmuxa_i_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[2]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[8]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[9]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[10]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[11]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[12]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+
+                                    Page 9
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[13]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[14]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[15]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[16]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[4]_1_sqmuxa_i_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[1]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[3]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[5]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[24]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[28]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[30]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[22]_1_sqmuxa_i: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[26]_1_sqmuxa_i_0_0_0: 32 loads, 32 SLICEs
+      Net issue_stage_i.i_issue_read_operands.gen_asic_regfile.i_ariane_regfile.
+     mem[7]_1_sqmuxa_i: 32 loads, 32 SLICEs
+      Net icache_areq_o[166]: 20 loads, 20 SLICEs
+      Net ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.state_q[0]: 1 loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_shared_tlb.un1_flush_i_1_i: 128
+     loads, 128 SLICEs
+      Net ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_shared_tlb.update_lfsr: 8 loads,
+     8 SLICEs
+      Net ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_shared_tlb.un15_vpn_d_i: 33
+     loads, 33 SLICEs
+      Net
+     ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_ptw.un1_ptw_err_at_g_int_st_o_5_i_0:
+     32 loads, 32 SLICEs
+      Net ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_ptw.N_614_i: 32 loads, 32 SLICEs
+      Net gen_cache_wt.un1_i_cache_subsystem_2[66]: 11 loads, 11 SLICEs
+      Net
+     ex_stage_i.lsu_i.gen_mmu.i_cva6_mmu.i_ptw.un1_ptw_err_at_g_int_st_o_3_i: 1
+     loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.state_d_2_sqmuxa_i: 2 loads, 2 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_1_sqmuxa_1_i: 1
+     loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_1_sqmuxa_1_i_0: 1
+     loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_1_sqmuxa_1_i_1: 1
+     loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_1_sqmuxa_1_i_2: 1
+     loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_0_sqmuxa: 68 loads,
+     68 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_0_sqmuxa_0: 68
+     loads, 68 SLICEs
+
+                                   Page 10
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_0_sqmuxa_1: 68
+     loads, 68 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.valid_0_sqmuxa_2: 68
+     loads, 68 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.N_1399: 68 loads, 68
+     SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_write_pointer_q_RN
+     I4SFI4[1]: 68 loads, 68 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_write_pointer_q_RN
+     I4SFI4_1[1]: 68 loads, 68 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.store_buffer_i.commit_write_pointer_q_RN
+     I4SFI4_2[1]: 68 loads, 68 SLICEs
+      Net ex_stage_i.lsu_i.i_store_unit.genblk1.i_amo_buffer.i_amo_fifo.size2:
+     70 loads, 70 SLICEs
+      Net gen_cache_wt.un1_i_cache_subsystem_2[133]: 15 loads, 15 SLICEs
+      Net ex_stage_i.lsu_i.i_load_unit.N_561: 12 loads, 12 SLICEs
+      Net ex_stage_i.lsu_i.i_load_unit.state_q_ns_o2_RNI56539_0[1]: 12 loads, 12
+     SLICEs
+      Net ex_stage_i.lsu_i.i_load_unit.ldbuf_flushed_d15_i: 1 loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.dcache_req_ports_i_s0_i[132]: 2 loads, 2 SLICEs
+      Net ex_stage_i.lsu_i.lsu_bypass_i.valid_2_sqmuxa_i: 1 loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.lsu_bypass_i.valid_2_sqmuxa_i_0: 1 loads, 1 SLICEs
+      Net ex_stage_i.lsu_i.lsu_bypass_i.g_overflow_2_sqmuxa_i: 162 loads, 162
+     SLICEs
+      Net ex_stage_i.csr_buffer_i.valid_2_sqmuxa_i: 1 loads, 1 SLICEs
+      Net ex_stage_i.i_mult.i_div.in_vld_i_m: 9 loads, 9 SLICEs
+      Net ex_stage_i.i_mult.i_div.N_60_i: 32 loads, 32 SLICEs
+      Net ex_stage_i.i_mult.i_div.N_62_i: 32 loads, 32 SLICEs
+      Net ex_stage_i.i_mult.i_div.a_reg_en: 65 loads, 65 SLICEs
+      Net ex_stage_i.i_mult.i_div.cnt_qe: 5 loads, 5 SLICEs
+      Net csr_regfile_i.mpp_0_sqmuxa_i: 2 loads, 2 SLICEs
+      Net csr_regfile_i.r_0: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNI8K4NFA2: 2 loads, 2 SLICEs
+      Net csr_regfile_i.r_0_0: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNIKKMKKA2: 2 loads, 2 SLICEs
+      Net csr_regfile_i.locked_1_sqmuxa: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNIRTP8SP1: 2 loads, 2 SLICEs
+      Net csr_regfile_i.locked_1_sqmuxa_0: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNI9UVJ3U1: 2 loads, 2 SLICEs
+      Net csr_regfile_i.locked_1_sqmuxa_1: 1 loads, 1 SLICEs
+      Net csr_regfile_i.locked_1_sqmuxa_RNI389PNP1: 2 loads, 2 SLICEs
+      Net csr_regfile_i.locked_1_sqmuxa_2: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNIKTHHGU1: 2 loads, 2 SLICEs
+      Net csr_regfile_i.w_RNI7D1NBL: 3 loads, 3 SLICEs
+      Net csr_regfile_i.r_RNITTV7SQ: 3 loads, 3 SLICEs
+      Net csr_regfile_i.w_RNI31UGT31: 3 loads, 3 SLICEs
+      Net csr_regfile_i.w_RNID2OQ9L: 3 loads, 3 SLICEs
+      Net csr_regfile_i.w_RNIK9ID651: 3 loads, 3 SLICEs
+      Net csr_regfile_i.w_RNIB16B841: 3 loads, 3 SLICEs
+      Net csr_regfile_i.r_0_1: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNIK98O122: 2 loads, 2 SLICEs
+      Net csr_regfile_i.r_0_2: 1 loads, 1 SLICEs
+      Net csr_regfile_i.r_0_RNIV8QLU12: 2 loads, 2 SLICEs
+      Net csr_regfile_i.r_RNIOBAH611: 3 loads, 3 SLICEs
+      Net csr_regfile_i.w_RNIIAHB111: 3 loads, 3 SLICEs
+      Net csr_regfile_i.nmip_1_sqmuxa: 19 loads, 19 SLICEs
+      Net csr_regfile_i.fs_1_sqmuxa: 2 loads, 2 SLICEs
+
+                                   Page 11
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net csr_regfile_i.sie_0_sqmuxa_151_i: 3 loads, 3 SLICEs
+      Net csr_regfile_i.mprv_1_sqmuxa: 4 loads, 4 SLICEs
+      Net csr_regfile_i.mie_0_sqmuxa_150_i: 2 loads, 2 SLICEs
+      Net csr_regfile_i.scause_d_0_sqmuxa_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.mcause_d_0_sqmuxa_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.sepc_d_0_sqmuxa_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.mepc_d_0_sqmuxa_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.stval_d_0_sqmuxa_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.mtval_d_0_sqmuxa_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.debug_mode_d_4_sqmuxa_101_i: 1 loads, 1 SLICEs
+      Net csr_regfile_i.cause_0_sqmuxa_i: 3 loads, 3 SLICEs
+      Net csr_regfile_i.dpc_d_0_sqmuxa_152_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.priv_lvl_d_3_sqmuxa_i: 2 loads, 2 SLICEs
+      Net csr_regfile_i.un1_irq_i_89_i: 1 loads, 1 SLICEs
+      Net csr_regfile_i.N_4350_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.N_4351_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.N_4352_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.v_0_sqmuxa_i: 3 loads, 3 SLICEs
+      Net csr_regfile_i.mtvec_d_1_sqmuxa_149_i: 32 loads, 32 SLICEs
+      Net csr_regfile_i.pmpaddr_d[4]_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.pmpaddr_d[0]_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.pmpaddr_d[5]_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.pmpaddr_d[6]_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.pmpaddr_d[7]_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.un1_mip_d_2_sqmuxa: 1 loads, 1 SLICEs
+      Net csr_regfile_i.un1_csr_addr_i_144_i: 3 loads, 3 SLICEs
+      Net csr_regfile_i.mcounteren_d_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.medeleg_d_1_sqmuxa: 12 loads, 12 SLICEs
+      Net csr_regfile_i.scounteren_d_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.mie_d_2_sqmuxa: 3 loads, 3 SLICEs
+      Net csr_regfile_i.mscratch_d_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.mideleg_d_1_sqmuxa: 3 loads, 3 SLICEs
+      Net csr_regfile_i.dscratch0_d_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.sscratch_d_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.stvec_d_1_sqmuxa: 31 loads, 31 SLICEs
+      Net csr_regfile_i.mip_d_2_sqmuxa: 2 loads, 2 SLICEs
+      Net csr_regfile_i.dscratch1_d_1_sqmuxa: 32 loads, 32 SLICEs
+      Net csr_regfile_i.icache_d_1_sqmuxa: 1 loads, 1 SLICEs
+      Net csr_regfile_i.mode_1_sqmuxa: 24 loads, 24 SLICEs
+      Net csr_regfile_i.mcountinhibit_d_1_sqmuxa: 8 loads, 8 SLICEs
+      Net csr_regfile_i.dcache_d_1_sqmuxa: 1 loads, 1 SLICEs
+      Net csr_regfile_i.fiom_d_1_sqmuxa: 1 loads, 1 SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_qwre_1: 1 loads, 1 SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_qwre_2: 1 loads, 1 SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_qwre_3: 1 loads, 1 SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_qwre_4: 1 loads, 1 SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_qwre_6: 1 loads, 1 SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_d[4]_1_sqmuxa: 5 loads, 5
+     SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_d[1]_1_sqmuxa: 5 loads, 5
+     SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_d[5]_1_sqmuxa: 5 loads, 5
+     SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_d[2]_1_sqmuxa: 5 loads, 5
+     SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_d[6]_1_sqmuxa: 5 loads, 5
+     SLICEs
+
+                                   Page 12
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net gen_perf_counter.perf_counters_i.mhpmevent_d[3]_1_sqmuxa: 5 loads, 5
+     SLICEs
+      Net gen_perf_counter.perf_counters_i.mhpmevent_qwre_5: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.mshr_a
+     llocate: 35 loads, 35 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.un2_ms
+     hr_vld_d_i: 1 loads, 1 SLICEs
+      Net
+     gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.sc_fail_0:
+     16 loads, 16 SLICEs
+      Net
+     gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.sc_fail: 16
+     loads, 16 SLICEs
+      Net
+     gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_missunit.N_187_1_i:
+     1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.save_tag_i_o2: 22 loads, 22
+     SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.gen_rd_ports[1].genblk1.i_w
+     t_dcache_ctrl.save_tag: 20 loads, 20 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_0: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_0: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_1: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_1: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_2: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_2: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_3: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_3: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_4: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_4: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_5: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_5: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat
+     _q_1wre_3: 4 loads, 4 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat
+     _q_1wre_1: 4 loads, 4 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat
+     _q_1wre_0: 4 loads, 4 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.tx_stat
+     _q_1wre_2: 4 loads, 4 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.p_regs.
+
+                                   Page 13
+
+
+
+
+
+Design Summary (cont)
+---------------------
+     check_en_q_2: 3 loads, 3 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.wtag_0_
+     sqmuxa_6: 32 loads, 32 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_0_RNIELMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_0_RNIDKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_0_RNICJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_0_RNIBIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_1_RNIFLMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_1_RNIEKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_1_RNIDJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_1_RNICIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_2_RNIGLMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_2_RNIFKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_2_RNIEJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_2_RNIDIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_3_RNIHLMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_3_RNIGKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_3_RNIFJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_3_RNIEIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_4_RNIILMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_4_RNIHKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_4_RNIGJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_4_RNIFIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_5_RNIJLMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_5_RNIIKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_5_RNIHJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_5_RNIGIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_6_RNIKLMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_6_RNIJKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_6_RNIIJMA7: 8 loads, 8 SLICEs
+
+                                   Page 14
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_6_RNIHIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_7_RNILLMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_7_RNIKKMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_7_RNIJJMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.un21_ni
+     _pending_d_7_RNIIIMA7: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.vld_1_s
+     qmuxa_1_i: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.vld_1_s
+     qmuxa_i: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.vld_1_s
+     qmuxa_i_0: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.vld_1_s
+     qmuxa_i_1: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.checked
+     _2_sqmuxa_i_6: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.awe3: 2
+     loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.awe2: 2
+     loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.awe1: 2
+     loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.awe0: 2
+     loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id
+     _rr.lock_q: 4 loads, 4 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_tx_id
+     _rr.rr_d: 2 loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_dirty
+     _rr.lock_q: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.i_dirty
+     _rr.rr_d: 3 loads, 3 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_mem.i_rr_arb_tr
+     ee.un4_rr_d: 2 loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_cva6_icache.N_31: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_cva6_icache.cl_offset_qce[2]: 1
+     loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_cva6_icache.N_93_i: 8 loads, 8 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.un1_axi_rd_rdy: 65 loads, 64
+     SLICEs
+      Net noc_req_o_c[371]: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.icache_rtrn_rd_en6: 129
+     loads, 129 SLICEs
+      Net noc_req_o_c[292]: 3 loads, 3 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.un1_inval_ready_o7: 64 loads,
+     64 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_rr_arb_tree.lock_q: 2
+     loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_rr_arb_tree.un8_rr_d: 1
+     loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_icache_data_fifo.write_poin
+     ter_q_RNI03KG6_0[0]: 30 loads, 30 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_icache_data_fifo.write_poin
+
+                                   Page 15
+
+
+
+
+
+Design Summary (cont)
+---------------------
+     ter_q_RNI03KG6[0]: 30 loads, 30 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_dcache_data_fifo.write_poin
+     ter_q_RNIH5D96_0[0]: 77 loads, 77 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_dcache_data_fifo.write_poin
+     ter_q_RNIH5D96[0]: 77 loads, 77 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_rd_dcache_id.awe0: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_rd_dcache_id.awe1: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_rd_dcache_id.awe2: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_rd_dcache_id.awe3: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_wr_dcache_id.awe3: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_wr_dcache_id.awe2: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_wr_dcache_id.awe1: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_wr_dcache_id.awe0: 2 loads,
+     2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_b_fifo.mem_qwre_1: 1 loads,
+     1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_b_fifo.mem_qwre_3: 1 loads,
+     1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_b_fifo.mem_qwre_0: 1 loads,
+     1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_b_fifo.mem_qwre_2: 1 loads,
+     1 SLICEs
+   Number of LSRs:  5
+      Pin rst_ni: 9452 loads, 9447 SLICEs (Net: rst_ni_c)
+      Net issue_stage_i.i_scoreboard.d_N_6_mux: 16 loads, 16 SLICEs
+      Net gen_perf_counter.perf_counters_i.un1_we_i: 2 loads, 2 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_wt_dcache.i_wt_dcache_wbuffer.dirty_r
+     d_en6: 1 loads, 1 SLICEs
+      Net gen_cache_wt.i_cache_subsystem.i_adapter.i_b_fifo.b_push: 2 loads, 2
+     SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net rst_ni_c: 9452 loads
+      Net issue_q[0].sbe.rs1[4]: 581 loads
+      Net issue_q[0].sbe.rs2[4]: 569 loads
+      Net i_frontend.icache_vaddr_q_0[5]: 569 loads
+      Net enable_translation_csr_ex: 413 loads
+      Net rvfi_probes_o_c[590]: 404 loads
+      Net dsp_join_kb_50[1]: 374 loads
+      Net dsp_split_kb_140[6]: 322 loads
+      Net issue_q[0].sbe.rs2[3]: 318 loads
+      Net dsp_join_kb_50[0]: 316 loads
+
+
+
+
+
+   Number of warnings:  438
+   Number of criticals: 2
+   Number of errors:    1
+
+
+
+                                   Page 16
+
+
+
+
+
+Design Errors/Criticals/Warnings
+--------------------------------
+
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[79]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[78]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[77]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[76]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[75]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[74]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[73]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[72]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[71]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[70]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[69]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[68]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[67]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[66]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[65]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[64]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[63]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[62]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[61]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[60]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[59]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[58]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[57]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[56]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[55]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[54]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[53]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[52]' does not connect to
+     anything.
+
+                                   Page 17
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[51]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[50]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[49]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[48]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[47]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[46]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[45]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[44]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[43]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[42]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[41]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[40]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[39]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[38]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[37]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[36]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[35]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[34]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[33]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[32]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[31]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[30]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[29]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[28]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[27]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[26]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[25]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[24]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[23]' does not connect to
+
+                                   Page 18
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[22]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[21]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[20]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[19]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[18]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[17]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[16]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[15]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[14]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[13]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[12]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[11]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[10]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[9]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[8]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[5]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[0]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[135]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[134]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[133]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[132]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[131]' does not connect to
+     anything.
+
+                                   Page 19
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'noc_resp_i[130]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[129]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[128]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[127]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[126]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[125]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[124]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[123]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[122]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[121]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[120]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[119]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[118]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[117]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[116]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[115]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[114]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[113]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[112]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[111]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[110]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[109]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[108]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[107]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[106]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[105]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[104]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[34]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[33]' does not connect to
+
+                                   Page 20
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[31]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[30]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[29]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[28]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[27]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[26]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[25]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[24]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[23]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[22]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[21]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[20]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[19]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[18]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[17]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[16]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[15]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[14]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[13]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[12]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[11]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[10]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[9]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[8]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[5]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[4]' does not connect to
+     anything.
+
+                                   Page 21
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'noc_resp_i[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[0]' does not connect to
+     anything.
+CRITICAL <52351080> - map: SysConfig constraint CONFIGIO_VOLTAGE_BANK1 is not
+     specified. Please set it to 1.2, 1.8, 2.5 or 3.3.
+CRITICAL <52351080> - map: SysConfig constraint CONFIGIO_VOLTAGE_BANK2 is not
+     specified. Please set it to 1.2, 1.8, 2.5 or 3.3.
+ERROR <51001122> - map: Design doesn't fit into device specified, refer to the
+     design summary section for more details.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[79]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[78]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[77]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[76]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[75]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[74]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[73]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[72]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[71]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[70]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[69]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[68]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[67]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[66]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[65]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[64]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[63]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[62]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[61]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[60]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[59]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[58]' does not connect to
+
+                                   Page 22
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[57]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[56]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[55]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[54]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[53]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[52]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[51]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[50]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[49]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[48]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[47]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[46]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[45]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[44]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[43]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[42]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[41]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[40]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[39]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[38]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[37]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[36]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[35]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[34]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[33]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[32]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[31]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[30]' does not connect to
+     anything.
+
+                                   Page 23
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[29]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[28]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[27]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[26]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[25]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[24]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[23]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[22]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[21]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[20]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[19]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[18]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[17]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[16]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[15]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[14]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[13]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[12]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[11]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[10]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[9]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[8]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[5]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[1]' does not connect to
+
+                                   Page 24
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[0]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[135]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[134]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[133]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[132]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[131]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[130]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[129]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[128]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[127]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[126]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[125]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[124]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[123]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[122]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[121]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[120]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[119]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[118]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[117]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[116]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[115]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[114]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[113]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[112]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[111]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[110]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[109]' does not connect to
+     anything.
+
+                                   Page 25
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'noc_resp_i[108]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[107]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[106]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[105]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[104]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[34]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[33]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[31]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[30]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[29]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[28]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[27]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[26]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[25]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[24]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[23]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[22]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[21]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[20]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[19]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[18]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[17]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[16]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[15]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[14]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[13]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[12]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[11]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[10]' does not connect to
+
+                                   Page 26
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[9]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[8]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[5]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[0]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[79]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[78]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[77]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[76]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[75]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[74]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[73]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[72]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[71]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[70]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[69]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[68]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[67]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[66]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[65]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[64]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[63]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[62]' does not connect to
+     anything.
+
+                                   Page 27
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[61]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[60]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[59]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[58]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[57]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[56]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[55]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[54]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[53]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[52]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[51]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[50]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[49]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[48]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[47]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[46]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[45]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[44]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[43]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[42]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[41]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[40]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[39]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[38]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[37]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[36]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[35]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[34]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[33]' does not connect to
+
+                                   Page 28
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[32]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[31]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[30]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[29]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[28]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[27]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[26]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[25]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[24]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[23]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[22]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[21]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[20]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[19]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[18]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[17]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[16]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[15]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[14]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[13]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[12]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[11]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[10]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[9]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[8]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[5]' does not connect to
+     anything.
+
+                                   Page 29
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'cvxif_resp_i[0]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[135]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[134]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[133]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[132]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[131]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[130]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[129]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[128]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[127]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[126]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[125]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[124]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[123]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[122]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[121]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[120]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[119]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[118]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[117]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[116]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[115]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[114]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[113]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[112]' does not connect to
+
+                                   Page 30
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[111]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[110]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[109]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[108]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[107]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[106]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[105]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[104]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[34]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[33]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[31]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[30]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[29]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[28]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[27]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[26]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[25]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[24]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[23]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[22]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[21]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[20]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[19]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[18]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[17]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[16]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[15]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[14]' does not connect to
+     anything.
+
+                                   Page 31
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+WARNING <71003020> - map: Top module port 'noc_resp_i[13]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[12]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[11]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[10]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[9]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[8]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[7]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[6]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[5]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[4]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[3]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[2]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[1]' does not connect to
+     anything.
+WARNING <71003020> - map: Top module port 'noc_resp_i[0]' does not connect to
+     anything.
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 44 secs
+   Total REAL Time: 45 secs
+   Peak Memory Usage: 5058 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 32
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor
+     Corporation,  All rights reserved.

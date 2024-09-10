@@ -1,0 +1,24 @@
+#OPTIONS:"|-modgen|-top|MULTADDSUB18X18A|-I|/home/anonymous/lscc/radiant/2024.1/synpbase/lib|-devicelib|/home/anonymous/lscc/radiant/2024.1/synpbase/lib/xilinx/unisim.v|-encrypt|-pro|-sysv|-dw|-primux|-ram|-fixsmult|-tri_compatible|-autosm|-fid2|-sharing|on|-ll|2000|-params|/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/syntmp/MULTADDSUB18X18Acva6_0.param"
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/linux_a_64/c_ver":1715766995
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vlog/hypermods.v":1715766973
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vlog/scemi_objects.v":1715766973
+#CUR:"/home/anonymous/lscc/radiant/2024.1/synpbase/lib/vlog/scemi_pipes.svh":1715766973
+#CUR:"/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/syntmp/MULTADDSUB18X18Acva6_0.v":1725941549
+#CUR:"/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/syntmp/MULTADDSUB18X18Acva6_0.param":1725941549
+#numinternalfiles:3
+#defaultlanguage:verilog
+0			"/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/syntmp/MULTADDSUB18X18Acva6_0.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work MULT8X8 0
+module work MULT9X9A 0
+module work MULT18X18A 0
+module work MULTADDSUB18X18A 0
+module work DOTPRODADDSUB9X9 0
+module work DOTPRODADDSUB9X9A 0
+
+#identified top module
+top_module MULTADDSUB18X18A

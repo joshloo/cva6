@@ -1,0 +1,1 @@
+-link -encrypt -top cva6 -osyn /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/synwork/cva6_1_impl_1_comp.srs /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/synwork/layer0.srs  -jobname linker  

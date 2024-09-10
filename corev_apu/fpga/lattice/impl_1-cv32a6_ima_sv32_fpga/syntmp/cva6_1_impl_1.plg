@@ -1,0 +1,12 @@
+@P:  Worst Slack : -9.068
+@P:  cva6|clk_i - Estimated Frequency : 71.1 MHz
+@P:  cva6|clk_i - Requested Frequency : 200.0 MHz
+@P:  cva6|clk_i - Estimated Period : 14.068
+@P:  cva6|clk_i - Requested Period : 5.000
+@P:  cva6|clk_i - Slack : -9.068
+@P:  System - Estimated Frequency : 131.0 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 7.631
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : -2.631
+@P:  CPU Time : 0h:04m:27s

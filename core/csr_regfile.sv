@@ -780,7 +780,7 @@ module csr_regfile
           // if index is not even and XLEN==64, raise exception
           if (CVA6Cfg.XLEN == 64 && index[0] == 1'b1) read_access_exception = 1'b1;
           else begin
-            csr_rdata = pmpcfg_q[index*4+:CVA6Cfg.XLEN/8];
+            //csr_rdata = pmpcfg_q[index*4+:CVA6Cfg.XLEN/8];
           end
         end
         // PMPADDR

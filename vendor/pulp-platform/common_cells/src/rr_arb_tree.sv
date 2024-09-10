@@ -126,7 +126,7 @@ module rr_arb_tree #(
     assign idx_o    = '0;
   // non-degenerate cases
   end else begin : gen_arbiter
-    localparam int unsigned NumLevels = unsigned'($clog2(NumIn));
+    localparam int unsigned NumLevels = $clog2(NumIn);
 
     /* verilator lint_off UNOPTFLAT */
     idx_t    [2**NumLevels-2:0] index_nodes; // used to propagate the indices

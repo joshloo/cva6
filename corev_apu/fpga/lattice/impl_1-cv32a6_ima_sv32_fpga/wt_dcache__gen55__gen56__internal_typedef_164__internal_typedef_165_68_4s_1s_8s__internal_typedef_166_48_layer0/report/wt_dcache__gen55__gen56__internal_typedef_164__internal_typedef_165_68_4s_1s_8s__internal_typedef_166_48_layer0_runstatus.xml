@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the job information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<job_run_status name="Mapper">
+<report_link name="Detailed report">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0.srr</data>
+<title></title>
+</report_link>
+<job_status>
+<data>Completed</data>
+</job_status>
+<job_info>
+<info name="Notes">
+<data>250</data>
+<report_link name="more">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0/report/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0_notes.txt</data>
+</report_link>
+</info>
+<info name="Warnings">
+<data>648</data>
+<report_link name="more">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0/report/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0_warnings.txt</data>
+</report_link>
+</info>
+<info name="Errors">
+<data>0</data>
+<report_link name="more">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0/report/wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0_errors.txt</data>
+</report_link>
+</info>
+<info name="CPU Time">
+<data>0h:00m:13s</data>
+</info>
+<info name="Real Time">
+<data>0h:00m:13s</data>
+</info>
+<info name="Peak Memory">
+<data>1198MB</data>
+</info>
+<info name="Date &amp; Time">
+<data type="timestamp">1725942058</data>
+</info>
+</job_info>
+</job_run_status>

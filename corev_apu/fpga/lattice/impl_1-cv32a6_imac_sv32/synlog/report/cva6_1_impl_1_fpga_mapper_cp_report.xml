@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about all compile points from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="4" name="Compile Points Summary">
+<row>
+<data>Name</data>
+<data>Status</data>
+<data>Reason</data>
+<data>Real Time</data>
+<data>CPU Time</data>
+</row>
+<row>
+<data>
+<value>wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0</value>
+<report_link name="Report">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0/wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:01m:36s</data>
+<data>0h:01m:36s</data>
+</row>
+<row>
+<data>
+<value>load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0</value>
+<report_link name="Report">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0/load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:02m:37s</data>
+<data>0h:02m:38s</data>
+</row>
+<row>
+<data>
+<value>scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0</value>
+<report_link name="Report">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0/scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0.srr</data>
+</report_link>
+</data>
+<data>Mapped</data>
+<data>No database</data>
+<data>0h:02m:44s</data>
+<data>0h:02m:44s</data>
+</row>
+<row>
+<data>
+<value>cva6</value>
+<report_link name="Report">
+<data>/home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/cva6/cva6.srr</data>
+</report_link>
+</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:05m:17s</data>
+<data>0h:05m:17s</data>
+</row>
+</report_table>

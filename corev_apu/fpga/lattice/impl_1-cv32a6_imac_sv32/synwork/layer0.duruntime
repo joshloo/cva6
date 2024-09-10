@@ -1,0 +1,303 @@
+Runtime Summary:
+================
+
+	* Library: work, DesignUnit: wt_dcache_wbuffer__gen64__gen65__internal_typedef_167_73_8s__internal_typedef_167_49_layer0
+		Optimization Phase          : 0h:00m:05s
+
+	* Library: work, DesignUnit: rr_arb_tree__internal_typedef_167_74_8_32s_0_0_1_1_3__internal_typedef_169
+		Optimization Phase          : 0h:00m:01s
+
+	* Library: work, DesignUnit: perf_counters__gen52__gen53__gen54__gen55__gen56__gen57_68_4s_43_layer0
+		Optimization Phase          : 0h:00m:01s
+
+	* Library: work, DesignUnit: csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_65_Z40_layer0
+		Optimization Phase          : 0h:00m:06s
+
+	* Library: work, DesignUnit: scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0
+		Initial Cleanup Phase       : 0h:00m:01s
+		Optimization Phase          : 0h:00m:21s
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: wt_cache_subsystem__gen58__gen59__gen60__gen61__gen62__gen63__gen64__gen65__gen66__gen67_69_Z57_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_axi_adapter__gen66__gen67__internal_typedef_165__internal_typedef_166__internal_typedef_164__gen62__gen63_79_Z56_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi_shim__gen66__gen67_82_2_1s_55_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3_1_5_4_0_2s_4
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3_0_2_4_0_2s_4
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3__internal_typedef_165_81_0_32s_2s_0_1s_2s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3__gen62_80_0_32s_2s_0_1s_2s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree_2s_1s_0_1_1_1_1__internal_typedef_6
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_dcache_ctrl__gen70__gen71_78_8s_1_54_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_dcache_ctrl__gen68__gen69_77_8s_1_53_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4s_1s_8s__internal_typedef_167_52_layer0
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_23_1s_0s_256_none_0s_64_64_8
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_cache_23_1s_0s_256_none_0s_0_0s_23
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: tc_sram_wrapper_Z51_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_256_256_0_256_none_0s_256_256_32
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_cache_256_256_0_256_none_1s_0_0s_256
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_dcache_mem__internal_typedef_167_76_8s_4s_4_2s_3s_50_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree_4s_1s_0_0_0_1_2__internal_typedef_6
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_dcache_wbuffer__gen64__gen65__internal_typedef_167_73_8s__internal_typedef_167_49_layer0
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__internal_typedef_167_75_8_32s_0_0_0_1_3__internal_typedef_171
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__internal_typedef_167_74_8_32s_0_0_1_1_3__internal_typedef_169
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree_4_1s_0_0_1_1_2__internal_typedef_6
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3_0_2s_4_0_2s_4
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_dcache_missunit__internal_typedef_165__internal_typedef_166_72_8s_1_4s_48_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: exp_backoff_3s_16s_16s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lfsr_8s_3s_255_0s_1_47_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_8_0_3
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_4s_0_2
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_128_128_0_256s_none_0s_128_128_16
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_cache_128_128_0_256s_none_0s_0_0s_128
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: tc_sram_wrapper_Z46_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_23_1s_0s_256s_none_0s_64_64_8
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_cache_23_1s_0s_256s_none_0s_0_0s_23
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_icache__gen58__gen59__gen60__gen61__gen62__gen63_70_Z45_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lfsr_8s_2_255_0s_1_44_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_4_0_2
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: perf_counters__gen52__gen53__gen54__gen55__gen56__gen57_68_4s_43_layer0
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_rvfi_probes__internal_typedef_11__internal_typedef_17__internal_typedef_20__internal_typedef_7__internal_typedef_8__internal_typedef_9_67_Z42_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: controller__internal_typedef_18_66__internal_typedef_18_41_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_65_Z40_layer0
+			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+		* Library: work, DesignUnit: commit_stage__internal_typedef_11__internal_typedef_17_64__internal_typedef_17_39_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ex_stage__internal_typedef_18__internal_typedef_10__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20__internal_typedef_43_46_Z38_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_mmu__gen45__gen46__gen47__gen48__gen49__gen50__gen51_59_Z37_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_ptw__internal_typedef_162__internal_typedef_163__gen50__gen51_63_0s_36_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmp_entry_34_32_35_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_34_0_6
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmp_34_32_8_34_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_32_1s_0s_64_none_0s_64_64_8
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: tc_sram_wrapper_Z33_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sram_24s_1s_0s_64_none_0s_64s_64s_8s
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_shared_tlb__internal_typedef_162__internal_typedef_163_62_2s_0s_32_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lfsr_8s_1s_255_0s_1_31_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_2s_0_1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_tlb__internal_typedef_162__internal_typedef_163_61_2_0s_18446744073709551615_30_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_tlb__internal_typedef_162__internal_typedef_163_60_2_0s_18446744073709551615_29_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lsu_bypass__internal_typedef_20_58__internal_typedef_20_27_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: shift_reg__internal_typedef_160_57_0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: shift_reg__internal_typedef_159_56_1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_2_0_1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: load_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_55_0_1s_26_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: amo_buffer_25_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3_amo_op_t_54_0_32s_1s_0_1s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_20_52__internal_typedef_20_24_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: store_buffer__internal_typedef_24__internal_typedef_25_53__internal_typedef_25_23_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: mult__internal_typedef_21_50__internal_typedef_21_22_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: serdiv_32_0s_21_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_32_18446744073709551615s_5
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: multiplier_20_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: csr_buffer__internal_typedef_21_49__internal_typedef_21_19_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: branch_unit__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21_48__internal_typedef_21_18_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: alu__internal_typedef_21_47_1__internal_typedef_21_17_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: issue_stage__internal_typedef_18__internal_typedef_10__internal_typedef_11__internal_typedef_21__internal_typedef_17__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_10_Z16_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ariane_regfile_32_2_18446744073709551615s_5s_32s_15_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: issue_read_operands__internal_typedef_10__internal_typedef_21__internal_typedef_17_rs3_len_t__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_44_Z14_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cvxif_issue_register_commit_if_driver__internal_typedef_39__internal_typedef_40__internal_typedef_41__internal_typedef_42_45__internal_typedef_42_13_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree_12_32_1_1_0_1_4__internal_typedef_6
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen44_43_9_32s_1_1_0_1_4__internal_typedef_158
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen43_42_9_32s_1_1_0_1_4__internal_typedef_156
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen42_41_9_32s_1_1_0_1_4__internal_typedef_154
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen41_40_9_32s_1_1_0_1_4__internal_typedef_152
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen40_39_9_32s_1_1_0_1_4__internal_typedef_150
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen39_38_9_32s_1_1_0_1_4__internal_typedef_148
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen38_37_9_32s_1_1_0_1_4__internal_typedef_146
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen37_36_9_32s_1_1_0_1_4__internal_typedef_144
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen36_35_9_32s_1_1_0_1_4__internal_typedef_142
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen35_34_9_32s_1_1_0_1_4__internal_typedef_140
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen34_33_9_32s_1_1_0_1_4__internal_typedef_138
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen33_32_9_32s_1_1_0_1_4__internal_typedef_136
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen32_31_9_32s_1_1_0_1_4__internal_typedef_134
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen31_30_9_32s_1_1_0_1_4__internal_typedef_132
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen30_29_9_32s_1_1_0_1_4__internal_typedef_130
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen29_28_9_32s_1_1_0_1_4__internal_typedef_128
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen28_27_9_32s_1_1_0_1_4__internal_typedef_126
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen27_26_9_32s_1_1_0_1_4__internal_typedef_124
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen26_25_9_32s_1_1_0_1_4__internal_typedef_122
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen25_24_9_32s_1_1_0_1_4__internal_typedef_120
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen24_23_9_32s_1_1_0_1_4__internal_typedef_118
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen23_22_9_32s_1_1_0_1_4__internal_typedef_116
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen22_21_9_32s_1_1_0_1_4__internal_typedef_114
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen21_20_9_32s_1_1_0_1_4__internal_typedef_112
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen20_19_9_32s_1_1_0_1_4__internal_typedef_110
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen19_18_9_32s_1_1_0_1_4__internal_typedef_108
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen18_17_9_32s_1_1_0_1_4__internal_typedef_106
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen17_16_9_32s_1_1_0_1_4__internal_typedef_104
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen16_15_9_32s_1_1_0_1_4__internal_typedef_102
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen15_14_9_32s_1_1_0_1_4__internal_typedef_100
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen14_13_9_32s_1_1_0_1_4__internal_typedef_98
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rr_arb_tree__gen13_12_9_32s_1_1_0_1_4__internal_typedef_96
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: decoder__gen8__gen9__gen10__gen11__gen12_9__gen12_11_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cvxif_compressed_if_driver__gen6__gen7_8__gen7_10_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: compressed_decoder_9_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: id_stage__internal_typedef_10__internal_typedef_11__internal_typedef_16__internal_typedef_19__internal_typedef_17__internal_typedef_46__internal_typedef_37__internal_typedef_38_7_Z8_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: instr_scan_7_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: bht__gen5_6_128_1s_64_1s_1s_8s_6_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: btb__gen3__gen4_5_Z5_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: ras__gen2_4_2_4_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: frontend__internal_typedef_18__internal_typedef_16__internal_typedef_14__internal_typedef_15_0__internal_typedef_90_3_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3__gen1_3_0_32s_4s_0_2s_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3__gen0_2_0_32s_4s_0_2s_4s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: popcount_2_2s_2s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: lzc_2_0s_1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: instr_queue__internal_typedef_16_1_0s_2_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: unread
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_fifo_v3_0_32_2s_0_1s_2s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: instr_realign_1_layer0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: hwpf_stride_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: hpdcache_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: cf_math_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: cvxif_instr_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: build_config_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: instr_tracer_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: std_cache_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: wt_cache_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: axi_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: ariane_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: riscv
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: cva6_config_pkg
+			Hardware Generation Phase: Negligible CPU time
+		* Library: work, DesignUnit: config_pkg
+			Hardware Generation Phase: Negligible CPU time
