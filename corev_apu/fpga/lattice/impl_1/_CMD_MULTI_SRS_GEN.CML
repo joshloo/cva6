@@ -1,1 +1,0 @@
- -link  -top  cva6  -multisrs  /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/synwork/cva6_1_impl_1_comp.srs  -osyn  /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/synwork/cva6_1_impl_1_mult.srs  -log  /home/anonymous/code/cva6/corev_apu/fpga/lattice/impl_1/synlog/cva6_1_impl_1_multi_srs_gen.srr 

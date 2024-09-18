@@ -1,9 +1,0 @@
-n work load_store_unit__internal_typedef_24__internal_typedef_25__internal_typedef_11__internal_typedef_21__internal_typedef_12__internal_typedef_13__internal_typedef_14__internal_typedef_15__internal_typedef_20_51_Z28_layer0 verilog;
-av .compile_point_summary_status "Mapped";
-av .compile_point_summary_reason "No database";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 154.478;
-av .compile_point_starttime_stamp "Tue Sep 10 12:25:37 2024";
-av .compile_point_endtime_stamp "Tue Sep 10 12:28:12 2024";
-av .compile_point_realtime_used 154.392;
