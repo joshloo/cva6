@@ -1,6 +1,0 @@
-#List of actual used RTLs.
-
-File                                                                                                                          Type     IN_PROJECT/INCLUDED/LIBRARY
-
-"/home/anonymous/code/cva6/core/cva6_fifo_v3.sv"                                                                           verilog                      IN PROJECT
-"/home/anonymous/code/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv"                                            verilog                      IN PROJECT

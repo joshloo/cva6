@@ -1,5 +1,0 @@
-set_partition_info -name "/cva6" -timestamp "1725942004"
-set_partition_info -name "/cva6/cva6" -timestamp "1725942004"
-set_partition_info -name "/cva6/cva6" -timestamp "1725942004"
-set_partition_info -name "/cva6/cva6" -timestamp "1725942004"
-set_partition_info -name "/cva6/cva6" -timestamp "1725942004"

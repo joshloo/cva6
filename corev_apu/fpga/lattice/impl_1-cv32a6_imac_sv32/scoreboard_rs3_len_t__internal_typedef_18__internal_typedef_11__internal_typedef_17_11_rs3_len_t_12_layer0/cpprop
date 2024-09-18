@@ -1,9 +1,0 @@
-n work scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_11_rs3_len_t_12_layer0 verilog;
-av .compile_point_summary_status "Mapped";
-av .compile_point_summary_reason "No database";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 164.448;
-av .compile_point_starttime_stamp "Tue Sep 10 12:11:50 2024";
-av .compile_point_endtime_stamp "Tue Sep 10 12:14:34 2024";
-av .compile_point_realtime_used 164.341;

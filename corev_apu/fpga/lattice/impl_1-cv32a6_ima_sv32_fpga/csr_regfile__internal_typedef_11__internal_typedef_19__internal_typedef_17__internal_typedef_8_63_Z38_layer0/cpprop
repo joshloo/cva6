@@ -1,9 +1,0 @@
-n work csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_63_Z38_layer0 verilog;
-av .compile_point_summary_status "Mapped";
-av .compile_point_summary_reason "No database";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 36.5713;
-av .compile_point_starttime_stamp "Tue Sep 10 12:20:07 2024";
-av .compile_point_endtime_stamp "Tue Sep 10 12:20:43 2024";
-av .compile_point_realtime_used 36.3802;

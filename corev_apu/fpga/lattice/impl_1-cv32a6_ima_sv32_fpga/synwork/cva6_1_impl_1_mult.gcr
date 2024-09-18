@@ -1,8 +1,0 @@
-i clk_i
-m 0 0
-u 916 5074
-p {p:clk_i}{t:csr_regfile_i.clk_i}{p:csr_regfile_i.clk_i}{t:csr_regfile_i.dcache_q[0].C}
-e ckid0_0 {t:csr_regfile_i.dcache_q[0].C} dffse
-c ckid0_0 {p:clk_i} port Unsupported/too complex instance on clock path
-l 0 0 0 0 0 0
-r 0 0 0 0 0 0 0 0

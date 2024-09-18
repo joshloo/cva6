@@ -1,9 +1,0 @@
-n work wt_dcache__gen55__gen56__internal_typedef_164__internal_typedef_165_68_4s_1s_8s__internal_typedef_166_48_layer0 verilog;
-av .compile_point_summary_status "Mapped";
-av .compile_point_summary_reason "No database";
-av .compile_point_update_model 0;
-av .compile_point_fast_synthesis "No";
-av .compile_point_cputime_used 13.3697;
-av .compile_point_starttime_stamp "Tue Sep 10 12:20:45 2024";
-av .compile_point_endtime_stamp "Tue Sep 10 12:20:58 2024";
-av .compile_point_realtime_used 13.1671;

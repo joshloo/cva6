@@ -1,3 +1,0 @@
-Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
-work, csr_regfile__internal_typedef_11__internal_typedef_19__internal_typedef_17__internal_typedef_8_63_Z38_layer0,0h:00m:03s,0h:00m:00s,0h:00m:00s,0h:00m:02s,   441 MB,    55 MB,    10 MB,    21 MB,    25 MB
-work, scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal_typedef_17_9_rs3_len_t_10_layer0,0h:00m:06s,0h:00m:00s,0h:00m:00s,0h:00m:05s,   502 MB,    93 MB,    29 MB,    16 MB,    47 MB
