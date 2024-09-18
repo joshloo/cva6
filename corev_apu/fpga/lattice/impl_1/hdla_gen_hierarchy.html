@@ -1,0 +1,418 @@
+<HTML>         	<HEAD><TITLE></TITLE>                                   	<STYLE TYPE="text/css">                               	<!--                                                    	body,pre{                                              	font-family:'Courier New', monospace;             	color: #000000;                                     	font-size:88%;                                      	background-color: #ffffff;                          	}                                                       	h1 {                                                    	font-weight: bold;                                  	margin-top: 24px;                                   	margin-bottom: 10px;                                	border-bottom: 3px solid #000;    font-size: 1em;   	}                                                       	h2 {                                                    	font-weight: bold;                                  	margin-top: 18px;                                   	margin-bottom: 5px;                                 	font-size: 0.90em;                                  	}                                                       	h3 {                                                    	font-weight: bold;                                  	margin-top: 12px;                                   	margin-bottom: 5px;                                 	font-size: 0.80em;                                       	}                                                       	p {                                                     	font-size:78%;                                      	}                                                       	P.Table {                                               	margin-top: 4px;                                    	margin-bottom: 4px;                                 	margin-right: 4px;                                  	margin-left: 4px;                                   	}                                                       	table                                                   	{                                                       	border-width: 1px 1px 1px 1px;                      	border-style: solid solid solid solid;              	border-color: black black black black;              	border-collapse: collapse;                          	}                                                       	th {                                                    	font-weight:bold;                                   	padding: 4px;                                       	border-width: 1px 1px 1px 1px;                      	border-style: solid solid solid solid;              	border-color: black black black black;              	vertical-align:top;                                 	text-align:left;                                    	font-size:78%;                                           	}                                                       	td {                                                    	padding: 4px;                                       	border-width: 1px 1px 1px 1px;                      	border-style: solid solid solid solid;              	border-color: black black black black;              	vertical-align:top;                                 	font-size:78%;                                      	}                                                       	a {                                                     	color:#013C9A;                                      	text-decoration:none;                               	}                                                       		a:visited {                                             	color:#013C9A;                                      	}                                                       		a:hover, a:active {                                     	text-decoration:underline;                          	color:#5BAFD4;                                      	}                                                       	.pass                                                   	{                                                       	background-color: #00ff00;                              	}                                                                	.fail                                                   	{                                                       	background-color: #ff0000;                              	}                                                       	.comment                                                	{                                                       	font-size: 90%;                                     	font-style: italic;                                 	}                                                       		-->                                                     	</STYLE>                                                	</HEAD>                                                 	<BODY>                                                  	<PRE>Setting log file to 'C:/code/cva6-joshloo/cva6/corev_apu/fpga/lattice/impl_1/hdla_gen_hierarchy.html'.
+Starting: parse design source files
+(VERI-1482) Analyzing Verilog file 'C:/lscc/radiant/2024.1/cae_library/synthesis/verilog/lav-ate-es.v'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/fpga-support/rtl/SyncDpRam.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/config_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/cv32a6_imac_sv0_config_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/riscv_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/ariane_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/axi/src/axi_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/wt_cache_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/std_cache_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(18,13-18,22) (VERI-2418) parameter 'INSTR_NOP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(20,13-20,22) (VERI-2418) parameter 'INSTR_LUI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(21,13-21,24) (VERI-2418) parameter 'INSTR_AUIPC' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(22,13-22,22) (VERI-2418) parameter 'INSTR_JAL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(23,13-23,23) (VERI-2418) parameter 'INSTR_JALR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(25,13-25,23) (VERI-2418) parameter 'INSTR_BEQZ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(26,13-26,22) (VERI-2418) parameter 'INSTR_BEQ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(27,13-27,23) (VERI-2418) parameter 'INSTR_BNEZ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(28,13-28,22) (VERI-2418) parameter 'INSTR_BNE' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(29,13-29,23) (VERI-2418) parameter 'INSTR_BLTZ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(30,13-30,22) (VERI-2418) parameter 'INSTR_BLT' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(31,13-31,23) (VERI-2418) parameter 'INSTR_BGEZ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(32,13-32,22) (VERI-2418) parameter 'INSTR_BGE' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(33,13-33,23) (VERI-2418) parameter 'INSTR_BLTU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(34,13-34,23) (VERI-2418) parameter 'INSTR_BGEU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(37,13-37,21) (VERI-2418) parameter 'INSTR_LI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(38,13-38,23) (VERI-2418) parameter 'INSTR_ADDI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(39,13-39,23) (VERI-2418) parameter 'INSTR_SLTI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(40,13-40,24) (VERI-2418) parameter 'INSTR_SLTIU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(41,13-41,23) (VERI-2418) parameter 'INSTR_XORI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(42,13-42,22) (VERI-2418) parameter 'INSTR_ORI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(43,13-43,23) (VERI-2418) parameter 'INSTR_ANDI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(44,13-44,23) (VERI-2418) parameter 'INSTR_SLLI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(45,13-45,23) (VERI-2418) parameter 'INSTR_SRLI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(46,13-46,23) (VERI-2418) parameter 'INSTR_SRAI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(49,13-49,24) (VERI-2418) parameter 'INSTR_ADDIW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(50,13-50,24) (VERI-2418) parameter 'INSTR_SLLIW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(51,13-51,24) (VERI-2418) parameter 'INSTR_SRLIW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(52,13-52,24) (VERI-2418) parameter 'INSTR_SRAIW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(55,13-55,22) (VERI-2418) parameter 'INSTR_ADD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(56,13-56,22) (VERI-2418) parameter 'INSTR_SUB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(57,13-57,22) (VERI-2418) parameter 'INSTR_SLL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(58,13-58,22) (VERI-2418) parameter 'INSTR_SLT' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(59,13-59,23) (VERI-2418) parameter 'INSTR_SLTU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(60,13-60,22) (VERI-2418) parameter 'INSTR_XOR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(61,13-61,22) (VERI-2418) parameter 'INSTR_SRL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(62,13-62,22) (VERI-2418) parameter 'INSTR_SRA' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(63,13-63,21) (VERI-2418) parameter 'INSTR_OR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(64,13-64,22) (VERI-2418) parameter 'INSTR_AND' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(65,13-65,22) (VERI-2418) parameter 'INSTR_MUL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(68,13-68,23) (VERI-2418) parameter 'INSTR_ADDW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(69,13-69,23) (VERI-2418) parameter 'INSTR_SUBW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(70,13-70,23) (VERI-2418) parameter 'INSTR_SLLW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(71,13-71,23) (VERI-2418) parameter 'INSTR_SRLW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(72,13-72,23) (VERI-2418) parameter 'INSTR_SRAW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(73,13-73,23) (VERI-2418) parameter 'INSTR_MULW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(76,13-76,24) (VERI-2418) parameter 'INSTR_FENCE' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(77,13-77,25) (VERI-2418) parameter 'INSTR_FENCEI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(80,13-80,23) (VERI-2418) parameter 'INSTR_CSRW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(81,13-81,24) (VERI-2418) parameter 'INSTR_CSRRW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(82,13-82,23) (VERI-2418) parameter 'INSTR_CSRR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(83,13-83,24) (VERI-2418) parameter 'INSTR_CSRRS' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(84,13-84,23) (VERI-2418) parameter 'INSTR_CSRS' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(85,13-85,24) (VERI-2418) parameter 'INSTR_CSRRC' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(86,13-86,23) (VERI-2418) parameter 'INSTR_CSRC' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(88,13-88,24) (VERI-2418) parameter 'INSTR_CSRWI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(89,13-89,25) (VERI-2418) parameter 'INSTR_CSRRWI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(90,13-90,24) (VERI-2418) parameter 'INSTR_CSRSI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(91,13-91,25) (VERI-2418) parameter 'INSTR_CSRRSI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(92,13-92,24) (VERI-2418) parameter 'INSTR_CSRCI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(93,13-93,25) (VERI-2418) parameter 'INSTR_CSRRCI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(95,13-95,24) (VERI-2418) parameter 'INSTR_ECALL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(96,13-96,25) (VERI-2418) parameter 'INSTR_EBREAK' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(97,13-97,23) (VERI-2418) parameter 'INSTR_MRET' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(98,13-98,23) (VERI-2418) parameter 'INSTR_SRET' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(99,13-99,23) (VERI-2418) parameter 'INSTR_DRET' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(100,13-100,22) (VERI-2418) parameter 'INSTR_WFI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(101,13-101,25) (VERI-2418) parameter 'INSTR_SFENCE' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(104,13-104,23) (VERI-2418) parameter 'INSTR_PMUL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(105,13-105,22) (VERI-2418) parameter 'INSTR_DIV' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(106,13-106,23) (VERI-2418) parameter 'INSTR_DIVU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(107,13-107,22) (VERI-2418) parameter 'INSTR_REM' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(108,13-108,23) (VERI-2418) parameter 'INSTR_REMU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(111,13-111,24) (VERI-2418) parameter 'INSTR_FMADD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(112,13-112,24) (VERI-2418) parameter 'INSTR_FMSUB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(113,13-113,26) (VERI-2418) parameter 'INSTR_FNSMSUB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(114,13-114,25) (VERI-2418) parameter 'INSTR_FNMADD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(116,13-116,23) (VERI-2418) parameter 'INSTR_FADD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(117,13-117,23) (VERI-2418) parameter 'INSTR_FSUB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(118,13-118,23) (VERI-2418) parameter 'INSTR_FMUL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(119,13-119,23) (VERI-2418) parameter 'INSTR_FDIV' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(120,13-120,24) (VERI-2418) parameter 'INSTR_FSQRT' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(121,13-121,24) (VERI-2418) parameter 'INSTR_FSGNJ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(122,13-122,25) (VERI-2418) parameter 'INSTR_FSGNJN' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(123,13-123,25) (VERI-2418) parameter 'INSTR_FSGNJX' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(124,13-124,23) (VERI-2418) parameter 'INSTR_FMIN' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(125,13-125,23) (VERI-2418) parameter 'INSTR_FMAX' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(126,13-126,22) (VERI-2418) parameter 'INSTR_FLE' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(127,13-127,22) (VERI-2418) parameter 'INSTR_FLT' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(128,13-128,22) (VERI-2418) parameter 'INSTR_FEQ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(130,13-130,27) (VERI-2418) parameter 'INSTR_FCVT_F2F' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(131,13-131,26) (VERI-2418) parameter 'INSTR_FMV_F2X' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(132,13-132,25) (VERI-2418) parameter 'INSTR_FCLASS' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(133,13-133,26) (VERI-2418) parameter 'INSTR_FMV_X2F' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(134,13-134,27) (VERI-2418) parameter 'INSTR_FCVT_F2I' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(135,13-135,27) (VERI-2418) parameter 'INSTR_FCVT_I2F' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(138,13-138,22) (VERI-2418) parameter 'INSTR_AMO' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(141,20-141,22) (VERI-2418) parameter 'LB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(142,20-142,22) (VERI-2418) parameter 'LH' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(143,20-143,22) (VERI-2418) parameter 'LW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(144,20-144,22) (VERI-2418) parameter 'LD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(145,20-145,23) (VERI-2418) parameter 'LBU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(146,20-146,23) (VERI-2418) parameter 'LHU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(147,20-147,23) (VERI-2418) parameter 'LWU' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(148,20-148,23) (VERI-2418) parameter 'FLW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(149,20-149,23) (VERI-2418) parameter 'FLD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(150,20-150,23) (VERI-2418) parameter 'FLQ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(151,20-151,22) (VERI-2418) parameter 'SB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(152,20-152,22) (VERI-2418) parameter 'SH' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(153,20-153,22) (VERI-2418) parameter 'SW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(154,20-154,22) (VERI-2418) parameter 'SD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(155,20-155,23) (VERI-2418) parameter 'FSW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(156,20-156,23) (VERI-2418) parameter 'FSD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(157,20-157,23) (VERI-2418) parameter 'FSQ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(158,20-158,30) (VERI-2418) parameter 'C_ADDI4SPN' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(159,20-159,25) (VERI-2418) parameter 'C_FLD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(160,20-160,24) (VERI-2418) parameter 'C_LW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(161,20-161,25) (VERI-2418) parameter 'C_FLW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(162,20-162,25) (VERI-2418) parameter 'C_FSD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(163,20-163,24) (VERI-2418) parameter 'C_SW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(164,20-164,25) (VERI-2418) parameter 'C_FSW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(165,20-165,26) (VERI-2418) parameter 'C_ADDI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(166,20-166,25) (VERI-2418) parameter 'C_JAL' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(167,20-167,24) (VERI-2418) parameter 'C_LI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(168,20-168,25) (VERI-2418) parameter 'C_LUI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(169,20-169,26) (VERI-2418) parameter 'C_SRLI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(170,20-170,26) (VERI-2418) parameter 'C_SRAI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(171,20-171,26) (VERI-2418) parameter 'C_ANDI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(172,20-172,25) (VERI-2418) parameter 'C_SUB' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(173,20-173,25) (VERI-2418) parameter 'C_XOR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(174,20-174,24) (VERI-2418) parameter 'C_OR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(175,20-175,25) (VERI-2418) parameter 'C_AND' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(176,20-176,26) (VERI-2418) parameter 'C_SUBW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(177,20-177,26) (VERI-2418) parameter 'C_ADDW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(178,20-178,23) (VERI-2418) parameter 'C_J' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(179,20-179,26) (VERI-2418) parameter 'C_BEQZ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(180,20-180,26) (VERI-2418) parameter 'C_BNEZ' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(181,20-181,26) (VERI-2418) parameter 'C_SLLI' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(182,20-182,27) (VERI-2418) parameter 'C_FLDSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(183,20-183,26) (VERI-2418) parameter 'C_LWSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(184,20-184,27) (VERI-2418) parameter 'C_FLWSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(185,20-185,24) (VERI-2418) parameter 'C_MV' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(186,20-186,25) (VERI-2418) parameter 'C_ADD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(187,20-187,27) (VERI-2418) parameter 'C_FSDSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(188,20-188,26) (VERI-2418) parameter 'C_SWSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(189,20-189,27) (VERI-2418) parameter 'C_FSWSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(190,20-190,25) (VERI-2418) parameter 'C_NOP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(191,20-191,30) (VERI-2418) parameter 'C_ADDI16SP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(192,20-192,24) (VERI-2418) parameter 'C_JR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(193,20-193,26) (VERI-2418) parameter 'C_JALR' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(194,20-194,28) (VERI-2418) parameter 'C_EBREAK' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(195,20-195,24) (VERI-2418) parameter 'C_LD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(196,20-196,24) (VERI-2418) parameter 'C_SD' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(197,20-197,27) (VERI-2418) parameter 'C_ADDIW' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(198,20-198,26) (VERI-2418) parameter 'C_LDSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/include/instr_tracer_pkg.sv(199,20-199,26) (VERI-2418) parameter 'C_SDSP' declared inside package 'instr_tracer_pkg' shall be treated as localparam
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/include/build_config_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_compressed_if_driver.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_issue_register_commit_if_driver.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv(52,26-52,33) (VERI-2418) parameter 'NbInstr' declared inside package 'cvxif_instr_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv(53,32-53,42) (VERI-2418) parameter 'CoproInstr' declared inside package 'cvxif_instr_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv(136,26-136,37) (VERI-2418) parameter 'NbCompInstr' declared inside package 'cvxif_instr_pkg' shall be treated as localparam
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cvxif_example/include/cvxif_instr_pkg.sv(137,37-137,51) (VERI-2418) parameter 'CoproCompInstr' declared inside package 'cvxif_instr_pkg' shall be treated as localparam
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_fu.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_example/cvxif_example_coprocessor.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_example/instr_decoder.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_example/compressed_instr_decoder.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cvxif_example/copro_alu.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/cf_math_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/fifo_v3.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/lfsr.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/lfsr_8bit.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/stream_arbiter_flushable.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/stream_mux.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/stream_demux.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/lzc.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/shift_reg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/unread.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/popcount.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/exp_backoff.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/counter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/common_cells/src/delta_counter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6.sv'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cva6.sv(15,10-15,26) (VERI-1328) analyzing included file 'C:/code/cva6-joshloo/cva6/core/include/rvfi_types.svh'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cva6.sv(15,10-15,26) (VERI-2320) back to file 'C:/code/cva6-joshloo/cva6/core/cva6.sv'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cva6.sv(16,10-16,27) (VERI-1328) analyzing included file 'C:/code/cva6-joshloo/cva6/core/include/cvxif_types.svh'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cva6.sv(16,10-16,27) (VERI-2320) back to file 'C:/code/cva6-joshloo/cva6/core/cva6.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6_rvfi_probes.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/alu.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/branch_unit.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/compressed_decoder.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/macro_decoder.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/controller.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/csr_buffer.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/csr_regfile.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/decoder.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/ex_stage.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/instr_realign.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/id_stage.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/issue_read_operands.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/issue_stage.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/load_unit.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/load_store_unit.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/lsu_bypass.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/mult.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/multiplier.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/serdiv.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/perf_counters.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/ariane_regfile_ff.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/ariane_regfile_fpga.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/scoreboard.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/store_buffer.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/amo_buffer.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/store_unit.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/commit_stage.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/axi_shim.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6_fifo_v3.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/frontend/btb.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/frontend/bht.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/frontend/ras.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/frontend/instr_scan.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/frontend/instr_queue.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/frontend/frontend.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_dcache_ctrl.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_dcache_mem.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_dcache_missunit.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_dcache_wbuffer.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_dcache.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_icache.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_cache_subsystem.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/wt_axi_adapter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/tag_cmp.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/axi_adapter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/miss_handler.sv'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/miss_handler.sv(72,13-72,28) (VERI-1199) parameter 'NR_BYPASS_PORTS' becomes localparam in 'miss_handler' with formal parameter declaration list
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cache_ctrl.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_icache_axi_wrapper.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/std_cache_subsystem.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/std_nbdcache.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_demux.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_lfsr.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sync_buffer.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg_initialized.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_1hot_to_binary.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wbyteenable.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_sram_wmask.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wmask_1rw.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_downsize.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_pkg.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv(26,10-26,32) (VERI-1328) analyzing included file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv(26,10-26,32) (VERI-2320) back to file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv(26,10-26,32) (VERI-1328) analyzing included file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv(26,10-26,32) (VERI-2320) back to file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_amo.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl_pe.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_plru.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_sel.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_read_arbiter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_req_write_arbiter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_resp_demux.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_read.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv(179,12-179,34) (VERI-1328) analyzing included file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv(179,12-179,34) (VERI-2320) back to file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_subsystem.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_if_adapter.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_wrapper.sv'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_wrapper.sv(13,10-13,32) (VERI-1328) analyzing included file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/include/hpdcache_typedef.svh'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_wrapper.sv(13,10-13,32) (VERI-2320) back to file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/cva6_hpdcache_wrapper.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wmask_1rw.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/pmp/src/pmp.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/pmp/src/pmp_entry.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/common/local/util/tc_sram_wrapper.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/common/local/util/tc_sram_wrapper_cache_techno.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/common/local/util/sram.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/common/local/util/sram_cache.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_mmu.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_ptw.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_tlb.sv'
+(VERI-1482) Analyzing Verilog file 'C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_shared_tlb.sv'
+(VERI-1482) Analyzing Verilog file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(1,10-1,24) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v(40,10-40,57) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v(40,10-40,57) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_addsub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(1,10-1,24) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(2,10-2,21) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_add.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_add.v(50,10-50,44) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/adder/rtl/lscc_adder.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_add.v(50,10-50,44) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_add.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(2,10-2,21) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(3,10-3,30) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v(52,10-52,58) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v(52,10-52,58) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_complex_mult.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(3,10-3,30) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(4,10-4,25) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v(39,10-39,45) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/counter/rtl/lscc_cntr.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v(39,10-39,45) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_counter.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(4,10-4,25) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(5,10-5,35) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v(43,10-43,68) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/distributed_dpram/rtl/lscc_distributed_dpram.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v(43,10-43,68) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_dpram.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(5,10-5,35) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(6,10-6,35) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v(42,10-42,68) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/distributed_spram/rtl/lscc_distributed_spram.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v(42,10-42,68) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_spram.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(6,10-6,35) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(7,10-7,33) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v(42,10-42,64) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/distributed_rom/rtl/lscc_distributed_rom.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v(42,10-42,64) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_rom.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(7,10-7,33) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(8,10-8,39) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v(41,10-41,61) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/ram_shift_reg/rtl/lscc_shift_register.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v(41,10-41,61) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_distributed_shift_reg.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(8,10-8,39) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(9,10-9,22) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v(44,10-44,42) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/fifo/rtl/lscc_fifo.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v(44,10-44,42) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(9,10-9,22) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(10,10-10,25) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v(47,10-47,48) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v(47,10-47,48) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_fifo_dc.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(10,10-10,25) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(11,10-11,21) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v(52,10-52,64) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v(52,10-52,64) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_mac.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(11,10-11,21) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(12,10-12,31) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v(53,10-53,66) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v(53,10-53,66) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsubsum.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(12,10-12,31) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(13,10-13,28) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v(52,10-52,58) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v(52,10-52,58) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_multaddsub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(13,10-13,28) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(14,10-14,22) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v(51,10-51,54) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v(51,10-51,54) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_mult.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(14,10-14,22) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(15,10-15,24) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v(48,10-48,46) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v(48,10-48,46) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(15,10-15,24) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(16,10-16,27) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v(49,10-49,46) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v(49,10-49,46) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_be.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(16,10-16,27) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(17,10-17,29) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v(49,10-49,56) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/ram_dp_true/rtl/lscc_ram_dp_true.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v(49,10-49,56) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dp_true.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(17,10-17,29) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(18,10-18,24) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v(45,10-45,46) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v(45,10-45,46) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(18,10-18,24) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(19,10-19,27) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v(45,10-45,46) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v(45,10-45,46) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(19,10-19,27) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(20,10-20,21) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v(45,10-45,40) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/rom/rtl/lscc_rom.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v(45,10-45,40) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_rom.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(20,10-20,21) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(21,10-21,21) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v(50,10-50,54) (VERI-1328) analyzing included file 'C:/lscc/radiant/2024.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v(50,10-50,54) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_sub.v'
+INFO <2049992> - C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v(21,10-21,21) (VERI-2320) back to file 'C:/lscc/radiant/2024.1/ip/pmi/pmi_lav-at.v'
+INFO <2049992> - C:/code/cva6-joshloo/cva6/core/cva6.sv(18,8-18,12) (VERI-1018) compiling module 'cva6'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_ptw.sv(246,22-246,31) (VERI-1330) actual bit length 256 differs from formal bit length 288 for port 'conf_addr_i'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_ptw.sv(247,22-247,30) (VERI-1330) actual bit length 64 differs from formal bit length 72 for port 'conf_i'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_mmu.sv(511,22-511,31) (VERI-1330) actual bit length 256 differs from formal bit length 288 for port 'conf_addr_i'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_mmu.sv(512,22-512,30) (VERI-1330) actual bit length 64 differs from formal bit length 72 for port 'conf_i'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_mmu.sv(823,22-823,31) (VERI-1330) actual bit length 256 differs from formal bit length 288 for port 'conf_addr_i'
+WARNING <2049991> - C:/code/cva6-joshloo/cva6/core/cva6_mmu/cva6_mmu.sv(824,22-824,30) (VERI-1330) actual bit length 64 differs from formal bit length 72 for port 'conf_i'
+Done: design load finished with (0) errors, and (167) warnings
+
+</PRE></BODY></HTML>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about all compile points from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="4" name="Compile Points Summary">
+<row>
+<data>Name</data>
+<data>Status</data>
+<data>Reason</data>
+<data>Real Time</data>
+<data>CPU Time</data>
+</row>
+<row>
+<data>
+<value>wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4</value>
+<report_link name="Report">
+<data>C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\impl_1\wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4\wt_dcache__gen64__gen65__internal_typedef_165__internal_typedef_166_71_4.srr</data>
+</report_link>
+</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:02m:04s</data>
+<data>0h:02m:04s</data>
+</row>
+<row>
+<data>
+<value>load_store_unit__internal_typedef_24__internal_typedef_25__internal_type</value>
+<report_link name="Report">
+<data>C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\impl_1\load_store_unit__internal_typedef_24__internal_typedef_25__internal_type\load_store_unit__internal_typedef_24__internal_typedef_25__internal_type.srr</data>
+</report_link>
+</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:02m:57s</data>
+<data>0h:02m:56s</data>
+</row>
+<row>
+<data>
+<value>scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal</value>
+<report_link name="Report">
+<data>C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\impl_1\scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal\scoreboard_rs3_len_t__internal_typedef_18__internal_typedef_11__internal.srr</data>
+</report_link>
+</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:03m:56s</data>
+<data>0h:03m:53s</data>
+</row>
+<row>
+<data>
+<value>cva6</value>
+<report_link name="Report">
+<data>C:\code\cva6-joshloo\cva6\corev_apu\fpga\lattice\impl_1\cva6\cva6.srr</data>
+</report_link>
+</data>
+<data>Remapped</data>
+<data>User request</data>
+<data>0h:06m:49s</data>
+<data>0h:06m:45s</data>
+</row>
+</report_table>
